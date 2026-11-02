@@ -1,0 +1,7 @@
+{
+ "id": "22", "slug": "22-claude-memory", "comp": "T22", "fps": 30, "dur": 59.0, "bpm": 87.5,
+ "cuts": [11.712, 23.69, 26.426, 29.263, 29.696, 33.033, 34.902, 38.739, 50.951, 54.087, 54.688],
+ "highlights": [[0.3, 3.8], [6.0, 8.4], [21.5, 25.0], [30.0, 33.0], [54.1, 57.5]],
+ "ref": {"title": "Claude now has memory", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=PupmfSttxlc", "dur": 59.0, "fps": 29.97},
+ "style": "米色纸面 · 手绘线条 · 设置卡片 · 橙色八角框整理卡片 · 纸折信封收尾"
+}

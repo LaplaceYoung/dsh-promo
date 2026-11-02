@@ -35,3 +35,9 @@
 | 17 | `templates/_engine/audio/samples/fs766640-key-tactile.mp3` | Keyboard_Tactile_9 | StavSounds | <https://freesound.org/s/766640/> | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | 17 | `templates/_engine/audio/samples/fs570754-key-down.mp3` | Keyboard - Press down | Foxfire- | <https://freesound.org/s/570754/> | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | 17 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 18–22 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 20 | `templates/_engine/public/t20-studio.webp` | Studio Small 03（色调映射 JPG，缩到 1024×512） | Greg Zaal（Poly Haven） | <https://polyhaven.com/a/studio_small_03> | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| 21 | `templates/_engine/public/t21-earth.webp` | Distant Sunlight Illuminating Earth's Horizon（旋转 90°、裁切，片中调成蓝色） | Zelch Csaba | <https://www.pexels.com/photo/30596307/> | [Pexels License](https://www.pexels.com/license/) |
+| 22 | `templates/_engine/public/t22-paper.webp` | Photograph of a Brown Surface（缩到 1280×720，正片叠底） | Clarissa Schwarz | <https://www.pexels.com/photo/8941371/> | [Pexels License](https://www.pexels.com/license/) |
+| 22 | `templates/_engine/audio/samples/fs851276-paper-fold.mp3` | Folding paper quickly in different ways（转单声道） | kindofjo | <https://freesound.org/s/851276/> | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| 22 | `templates/_engine/audio/samples/fs68224-paper-double.mp3` | paper_double.wav（转单声道） | XTYL33 | <https://freesound.org/s/68224/> | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |

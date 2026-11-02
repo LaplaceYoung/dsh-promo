@@ -17,7 +17,7 @@ templates/
     scripts/master.py   母带：归一响度（默认 −14 LUFS），真峰值压到 −1.5 dBTP 以下
     scripts/register.py 把新模板注册进 Root.tsx
     scripts/qa.py       剪辑点、响度和抽帧检查
-    scripts/previews.sh 生成 preview.mp4（720p）和 preview.gif（照片多的模板会自动降色、改用有序抖动来压体积）
+    scripts/previews.sh 生成 preview.mp4（720p）和 preview.gif（照片多的模板会自动降色、改用有序抖动来压体积；音轨直接拷贝成片的 AAC，两个文件都先写到临时名再改名）
     scripts/fetch-fonts.sh 下载并安装 Noto Sans SC / Noto Serif SC 可变字重（OFL）
   NN-slug/
     Film.tsx  timeline.py  audio.py  meta.json  analysis.md  README.md  ASSETS.md（用到外部素材时）

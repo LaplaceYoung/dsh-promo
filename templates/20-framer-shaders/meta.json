@@ -1,0 +1,7 @@
+{
+ "id": "20", "slug": "20-framer-shaders", "comp": "T20", "fps": 60, "dur": 80.267, "bpm": 100,
+ "cuts": [6.0, 9.0, 27.433, 35.767],
+ "highlights": [[3.2, 6.0], [6.2, 9.0], [9.0, 11.2], [15.0, 17.0], [28.0, 30.0], [74.6, 76.6]],
+ "ref": {"title": "Framer Update: Interactive Shaders", "company": "Framer", "year": 2026, "url": "https://www.youtube.com/watch?v=rwMJ08sXNOA", "dur": 80.27, "fps": 60},
+ "style": "黑底玻璃界面 · 霓虹字 · 镀铬圆环 · 彩虹玻璃字 · 属性面板 · 长时间漂浮"
+}

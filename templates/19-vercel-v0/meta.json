@@ -1,0 +1,7 @@
+{
+ "id": "19", "slug": "19-vercel-v0", "comp": "T19", "fps": 60, "dur": 47.5, "bpm": 100,
+ "cuts": [30.633],
+ "highlights": [[3.0, 6.0], [7.0, 11.0], [18.0, 21.0], [38.0, 40.0], [41.0, 44.0]],
+ "ref": {"title": "Introducing v0: Generative UI", "company": "Vercel", "year": 2023, "url": "https://www.youtube.com/watch?v=By9wCB9IZp0", "dur": 47.51, "fps": 60},
+ "style": "白底黑色输入胶囊 · 逐句提示词 · 生成页面推近 · 作品墙 · 标志收尾"
+}

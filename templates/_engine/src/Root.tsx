@@ -31,8 +31,18 @@ import { Film as F13 } from "../../13-cursor-agents/Film"
 import M13 from "../../13-cursor-agents/meta.json"
 import { Film as F16 } from "../../16-notion-agents/Film"
 import M16 from "../../16-notion-agents/meta.json"
+import { Film as F18 } from "../../18-linear-agent/Film"
+import M18 from "../../18-linear-agent/meta.json"
+import { Film as F19 } from "../../19-vercel-v0/Film"
+import M19 from "../../19-vercel-v0/meta.json"
+import { Film as F20 } from "../../20-framer-shaders/Film"
+import M20 from "../../20-framer-shaders/meta.json"
+import { Film as F21 } from "../../21-kimi-swarm/Film"
+import M21 from "../../21-kimi-swarm/meta.json"
+import { Film as F22 } from "../../22-claude-memory/Film"
+import M22 from "../../22-claude-memory/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (

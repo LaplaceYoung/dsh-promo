@@ -24,7 +24,7 @@ English summary is [below](#english).
 
 ## 模板库
 
-除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 17 个。
+除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 22 个。
 
 | 编号 | 名称 | 参考片 | 风格 | 时长 | 预览 |
 |---|---|---|---|---|---|
@@ -45,6 +45,11 @@ English summary is [below](#english).
 | 15 | [品牌蓝粗体字卡 + 侧栏微距](templates/15-arc-tidy-tabs/) | [The Browser Company · Tidy Tabs by Arc](https://www.youtube.com/watch?v=DHTmMtJzRrc) | 品牌蓝粗体字卡 · 侧栏微距 · 风景壁纸 · 一键整理 | 20.6 秒 | [GIF](templates/15-arc-tidy-tabs/preview.gif) |
 | 16 | [手绘小人 + 蓝框页面 + 卡片墙](templates/16-notion-agents/) | [Notion · Introducing Notion 3.0 · Agents](https://www.youtube.com/watch?v=R1cF4T4lgI4) | 手绘小人 · 蓝框页面 · 超大打字 · 声波 · 卡片墙 | 90.0 秒 | [GIF](templates/16-notion-agents/preview.gif) |
 | 17 | [白底产品摄影 + 细小字卡](templates/17-op1-field/) | [teenage engineering · introducing OP–1 field](https://www.youtube.com/watch?v=Fab7sp30pg0) | 白底产品摄影 · 键帽微距 · 细小字卡逐词替换 · 漏光收尾 | 28.1 秒 | [GIF](templates/17-op1-field/preview.gif) |
+| 18 | [暗色倾斜界面 + 浅景深](templates/18-linear-agent/) | [Linear · Introducing Linear Agent](https://www.youtube.com/watch?v=mRql2VJ99gM) | 暗色倾斜界面 · 浅景深 · 低调对话 · 发光字收尾 | 54.9 秒 | [GIF](templates/18-linear-agent/preview.gif) |
+| 19 | [白底黑色输入胶囊 + 生成页面](templates/19-vercel-v0/) | [Vercel · Introducing v0: Generative UI](https://www.youtube.com/watch?v=By9wCB9IZp0) | 白底黑色输入胶囊 · 逐句提示词 · 生成页面推近 · 作品墙 | 47.5 秒 | [GIF](templates/19-vercel-v0/preview.gif) |
+| 20 | [黑底玻璃界面 + 着色器字](templates/20-framer-shaders/) | [Framer · Framer Update: Interactive Shaders](https://www.youtube.com/watch?v=rwMJ08sXNOA) | 黑底玻璃界面 · 霓虹字 · 镀铬圆环 · 属性面板 · 长时间漂浮 | 80.3 秒 | [GIF](templates/20-framer-shaders/preview.gif) |
+| 21 | [星球地平线 + 快切任务卡](templates/21-kimi-swarm/) | [Moonshot AI (Kimi) · Meet Kimi K2.6 Agent Swarm](https://www.youtube.com/watch?v=v7IJ8JNUNQ8) | 星球地平线 · 胶囊标题 · 快切任务卡 · 翻转方块墙 | 37.4 秒 | [GIF](templates/21-kimi-swarm/preview.gif) |
+| 22 | [米色纸面 + 橙色八角框](templates/22-claude-memory/) | [Anthropic · Claude now has memory](https://www.youtube.com/watch?v=PupmfSttxlc) | 米色纸面 · 手绘线条 · 设置卡片 · 橙色八角框 · 纸折信封 | 59.0 秒 | [GIF](templates/22-claude-memory/preview.gif) |
 
 从模板 12 开始，参考片里的实拍和照片会换成许可允许再分发的公开素材，署名见 [docs/assets-credits.md](docs/assets-credits.md)。
 
@@ -180,7 +185,7 @@ Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、
 
 Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
 
-**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Seventeen templates exist (01–17, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
+**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering, Vercel, Framer, Moonshot AI so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Twenty-two templates exist (01–22, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
 
 **Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
 

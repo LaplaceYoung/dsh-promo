@@ -1,0 +1,7 @@
+{
+ "id": "18", "slug": "18-linear-agent", "comp": "T18", "fps": 60, "dur": 54.917, "bpm": 71,
+ "cuts": [11.25, 17.1, 21.95, 29.733, 35.067, 40.617, 45.1],
+ "highlights": [[6.0, 8.5], [12.0, 14.5], [23.0, 25.0], [41.0, 43.0], [46.0, 49.0]],
+ "ref": {"title": "Introducing Linear Agent", "company": "Linear", "year": 2026, "url": "https://www.youtube.com/watch?v=mRql2VJ99gM", "dur": 54.92, "fps": 60},
+ "style": "暗色倾斜界面 · 浅景深 · 低调对话 · 发光字收尾"
+}
