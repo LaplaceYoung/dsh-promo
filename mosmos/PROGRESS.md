@@ -18,7 +18,7 @@ node stills.mjs            # 每个镜头抽一张静帧做检查 → ../build/s
 npx remotion render src/index.ts Mosmos ../build/silent.mp4 --codec h264 --crf 17 --concurrency 7 --gl=swangle --muted
 cd ..
 
-# 4. 合成：混音、竖版、缩略图
+# 4. 合成：混音、竖版（finish.sh 还会在本地生成一张镜头缩略图，仓库里不放）
 build/finish.sh
 python3 build/shotlist.py
 ```

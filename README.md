@@ -9,17 +9,21 @@
 
 这里放的是全部代码、工程文件，还有复刻的思路和过程。参考片本身**不在仓库里**。
 
-## 预览
+## 成片
 
-| | MosMos | MOSS Create |
-|---|---|---|
-| 缩略图（每个镜头一张） | `preview/mosmos-shots.jpg` | `preview/mossland-shots.jpg` |
-| 视频 | `preview/mosmos-preview-720p.mp4`（720p，30 fps，约 5 MB） | 没放（原因见下） |
+### MosMos
 
-![MosMos](preview/mosmos-shots.jpg)
-![MOSS Create](preview/mossland-shots.jpg)
+<video src="https://raw.githubusercontent.com/LaplaceYoung/dsh-promo/main/preview/mosmos-promo.mp4" controls width="100%"></video>
 
-MOSS Create 那支片子里有大量网站上的社区模板（用户作品，有的带第三方品牌和人物），所以只放了缩略图，没放视频。
+播放不了的话直接打开：[preview/mosmos-promo.mp4](preview/mosmos-promo.mp4)
+
+### MOSS Create
+
+<video src="https://raw.githubusercontent.com/LaplaceYoung/dsh-promo/main/preview/moss-create-promo.mp4" controls width="100%"></video>
+
+播放不了的话直接打开：[preview/moss-create-promo.mp4](preview/moss-create-promo.mp4)
+
+两个文件都是完整的 99.8 秒成片，为了放进仓库，重新压成了 1080p、30 fps，每个大约 13 MB。原始母版是 60 fps，可以按下面的步骤自己渲染。
 
 ## 目录
 
@@ -30,7 +34,7 @@ docs/
 mosmos/
   build/timeline.py       时间线：37 个镜头 + 镜头内小切 + 打字和音效事件，生成 timeline.json
   build/shotlist.py       生成和参考片逐条对照的镜头表
-  build/finish.sh         混音、竖版、缩略图
+  build/finish.sh         混音、竖版
   audio/audio.py          配乐和 UI 音效合成（numpy / scipy）
   remotion/src/           Film.tsx（每个镜头的画面）、lib.tsx（打字、光标、logo 等组件）
   remotion/public/        MosMos 官网的 logo 和插画纹理
@@ -44,7 +48,7 @@ moss-create/
   assets/README.md        哪些素材没放进仓库、为什么、怎么重新抓
   mossland-shotlist.md    镜头对照表
   PROGRESS.md             重建命令
-preview/                  两支片子的缩略图，MosMos 的 720p 预览
+preview/                  两支成片（1080p / 30 fps 压缩版）
 ```
 
 ## 环境
@@ -75,6 +79,7 @@ MOSS Create 的合成名叫 `Moss`（横版）和 `MossV`（竖版）。渲染�
 ## 几件要说清楚的事
 
 - **参考片**：DeepSeek Harness「创造模式」宣传片，版权归原作者。仓库里没有它的视频、音频、截图或缩略图，`docs/` 里只有文字拆解（镜头时间、画面描述、屏幕上的文字）。想对照的话，自己找公开版本看。
+- **MOSS Create 成片里的模板内容**：画面中出现的模板封面和预览视频是 create.moss.cn 上社区用户的作品，有些带第三方品牌，版权归各自作者和品牌方，仓库只是按网站原样录屏展示。
 - **产品名称和标志**：MosMos、MOSS Create、DeepSeek 等名称和 logo 归各自所有者。`mosmos/remotion/public/` 里的 logo 和纹理取自 mosmos.io，`moss-create/remotion/public/logo.svg` 取自 create.moss.cn，放在这里只是为了能把工程跑起来。
 - **这不是官方宣传片**。两支片子是练手和方法演示，和这几家公司都没有关系。
 - MosMos 是要安装的桌面软件，我们没有真实录屏，界面是照官网演示重画的。MOSS Create 用的是不登录时的真实录屏和截图，没法展示生成过程和结果。

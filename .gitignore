@@ -20,3 +20,5 @@ moss-create/remotion/public/s/*
 !moss-create/remotion/public/s/menu.png
 __pycache__/
 .DS_Store
+# no contact sheets / frame grabs in the repo
+*.jpg
