@@ -41,8 +41,18 @@ import { Film as F21 } from "../../21-kimi-swarm/Film"
 import M21 from "../../21-kimi-swarm/meta.json"
 import { Film as F22 } from "../../22-claude-memory/Film"
 import M22 from "../../22-claude-memory/meta.json"
+import { Film as F23 } from "../../23-linear-diffs/Film"
+import M23 from "../../23-linear-diffs/meta.json"
+import { Film as F24 } from "../../24-claude-code-slack/Film"
+import M24 from "../../24-claude-code-slack/meta.json"
+import { Film as F25 } from "../../25-claude-pick-up/Film"
+import M25 from "../../25-claude-pick-up/meta.json"
+import { Film as F26 } from "../../26-claude-education/Film"
+import M26 from "../../26-claude-education/meta.json"
+import { Film as F27 } from "../../27-framer-3/Film"
+import M27 from "../../27-framer-3/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (

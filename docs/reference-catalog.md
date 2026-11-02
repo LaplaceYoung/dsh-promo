@@ -10,7 +10,7 @@
 - 62 条都能用 yt-dlp 从 YouTube 下载（本地 360p 研究副本已全部取得，不进仓库）。
 - 类型：功能演示 37 条，品牌片 17 条，产品片 3 条，纪录短片 2 条，制作片 2 条，访谈 1 条。
 - 复刻适配度（能否不靠实拍、只用界面和图形复刻）：高 31 条，中 18 条，低 13 条。
-- 已复刻：03（Anthropic）、04（Linear）、05（Linear）、06（The Browser Company）、07（Notion）、08（Anthropic）、09（Cursor）、10（Apple）、11（Raycast）、12（Superhuman）、13（Cursor）、14（Figma）、15（The Browser Company）、16（Notion）、17（teenage engineering）、18（Linear）、19（Vercel）、20（Framer）、21（Moonshot AI）、22（Anthropic）。模板 01、02 的参考片在早期制作时没有记录来源链接，这里不列出。
+- 已复刻：03（Anthropic）、04（Linear）、05（Linear）、06（The Browser Company）、07（Notion）、08（Anthropic）、09（Cursor）、10（Apple）、11（Raycast）、12（Superhuman）、13（Cursor）、14（Figma）、15（The Browser Company）、16（Notion）、17（teenage engineering）、18（Linear）、19（Vercel）、20（Framer）、21（Moonshot AI）、22（Anthropic）、23（Linear）、24（Anthropic）、25（Anthropic）、26（Anthropic）、27（Framer）。模板 01、02 的参考片在早期制作时没有记录来源链接，这里不列出。
 
 字段说明：时长按秒取整；帧率和最高分辨率读自 YouTube 源文件信息；「适配度」是主观判断，「高」表示主要是界面、字卡和图形，适合直接复刻。
 
@@ -35,10 +35,10 @@
 | 15 | Anthropic | Introducing Claude Fable 5.1 | 2026 | 85 秒 | 24 | 品牌片 | 人物访谈 + 手绘图形 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=ROF2Nv_KjOM) |
 | 16 | Anthropic | An experimental new way to design software | 2025 | 102 秒 | 60 | 功能演示 | 淡紫底 UI · 窗口漂移 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=dGiqrsv530Y) |
 | 17 | Anthropic | A camera that makes poems | 2025 | 90 秒 | 24 | 纪录短片 | 真人纪录 · 胶片质感 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=FAsY40pbbnw) |
-| 18 | Anthropic | Claude Code in Slack | 2025 | 41 秒 | 30 | 功能演示 | 白底 Slack UI · 图标开场 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=XpXImenrSPI) |
-| 19 | Anthropic | Pick up where you left off with Claude | 2025 | 35 秒 | 30 | 功能演示 | 暖白 UI · 卡片扇出 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=UdoY2l5TZaA) |
+| 18 | Anthropic | Claude Code in Slack | 2025 | 41 秒 | 30 | 功能演示 | 白底 Slack UI · 图标开场 | 高 | 已复刻 · 模板 24 | [YouTube](https://www.youtube.com/watch?v=XpXImenrSPI) |
+| 19 | Anthropic | Pick up where you left off with Claude | 2025 | 35 秒 | 30 | 功能演示 | 暖白 UI · 卡片扇出 | 高 | 已复刻 · 模板 25 | [YouTube](https://www.youtube.com/watch?v=UdoY2l5TZaA) |
 | 20 | Anthropic | Designing Claude Code | 2025 | 723 秒 | 24 | 制作片 | 设计团队对谈 · 制作过程 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=vLIDHi-1PVU) |
-| 21 | Anthropic | Introducing Claude for Education | 2025 | 34 秒 | 30 | 功能演示 | 暖灰 UI · 光标操作 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=MIzq6LCMTtA) |
+| 21 | Anthropic | Introducing Claude for Education | 2025 | 34 秒 | 30 | 功能演示 | 暖灰 UI · 光标操作 | 高 | 已复刻 · 模板 26 | [YouTube](https://www.youtube.com/watch?v=MIzq6LCMTtA) |
 | 22 | OpenAI | This is Sora 2 | 2025 | 57 秒 | 24 | 品牌片 | AI 生成画面混剪 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=lEcg6AJ6DVY) |
 | 23 | OpenAI | GPT-6.1 Terra is now in orbit | 2026 | 32 秒 | 24 | 品牌片 | 实拍 + 3D 物件 + UI | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=tTuk4pGnT0A) |
 | 24 | OpenAI | There are many futures. Which do you want to build? | 2026 | 77 秒 | 24 | 品牌片 | 3D 插画动画 · 叙事 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=o4D1J1YWjhg) |
@@ -47,7 +47,7 @@
 | 27 | Cursor | Software is changing | 2026 | 55 秒 | 24 | 品牌片 | 拼贴动效 · 黑白剪纸图形 | 高 | 已复刻 · 模板 09 | [YouTube](https://www.youtube.com/watch?v=2SkrTnGMsr0) |
 | 28 | Cursor | Introducing Cursor for iOS | 2026 | 74 秒 | 24 | 功能演示 | 手持手机实拍 + 真人 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=ovxL42LkKNg) |
 | 29 | Linear | Introducing Linear Agent | 2026 | 55 秒 | 60 | 功能演示 | 暗色 3D 倾斜界面 · 景深 | 高 | 已复刻 · 模板 18 | [YouTube](https://www.youtube.com/watch?v=mRql2VJ99gM) |
-| 30 | Linear | Introducing Linear Diffs | 2026 | 52 秒 | 60 | 功能演示 | 暗色代码 diff · 3D 倾斜 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=7gZBxBTapDQ) |
+| 30 | Linear | Introducing Linear Diffs | 2026 | 52 秒 | 60 | 功能演示 | 暗色代码 diff · 3D 倾斜 | 高 | 已复刻 · 模板 23 | [YouTube](https://www.youtube.com/watch?v=7gZBxBTapDQ) |
 | 31 | Linear | Orbit (by Linear) | 2026 | 29 秒 | 48 | 品牌片 | 黑白图纸微距 · 墨线绘制 | 高 | 已复刻 · 模板 05 | [YouTube](https://www.youtube.com/watch?v=PsY9J2DB1FM) |
 | 32 | Linear | Introducing Linear Releases | 2026 | 30 秒 | 60 | 功能演示 | 暗色线条汇流 · 3D 界面 · 等宽字 | 高 | 已复刻 · 模板 04 | [YouTube](https://www.youtube.com/watch?v=6dIwFoQ0eVg) |
 | 33 | Vercel | Introducing v0: Generative UI | 2023 | 48 秒 | 60 | 功能演示 | 白底 UI 生成过程 | 高 | 已复刻 · 模板 19 | [YouTube](https://www.youtube.com/watch?v=By9wCB9IZp0) |
@@ -64,7 +64,7 @@
 | 44 | Notion | Introducing Notion 3.0: Agents | 2025 | 90 秒 | 24 | 功能演示 | UI 卡片 + 手绘插画 + 声波 | 高 | 已复刻 · 模板 16 | [YouTube](https://www.youtube.com/watch?v=R1cF4T4lgI4) |
 | 45 | Figma | Find your flow state with the Figma agent | 2026 | 69 秒 | 24 | 品牌片 | 真人表演 · 白棚 · 色彩人群 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=xTkrKqbsDec) |
 | 46 | Figma | Code Layers: Collaborate with code on the canvas · Figma | 2026 | 35 秒 | 24 | 功能演示 | 画布 UI · 代码图层 · 像素字 | 高 | 已复刻 · 模板 14 | [YouTube](https://www.youtube.com/watch?v=UMDUAHmhkT8) |
-| 47 | Framer | Framer 3.0 with Agents, Branching, and a new Community | 2026 | 75 秒 | 30 | 功能演示 | 暗色 UI + 蓝色光效 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=6aioEoCdBJw) |
+| 47 | Framer | Framer 3.0 with Agents, Branching, and a new Community | 2026 | 75 秒 | 30 | 功能演示 | 暗色 UI + 蓝色光效 | 高 | 已复刻 · 模板 27 | [YouTube](https://www.youtube.com/watch?v=6aioEoCdBJw) |
 | 48 | Framer | Framer Design Agents — Cannonball | 2026 | 20 秒 | 24 | 品牌片 | 实拍 + 3D 球体 · 短片 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=QQW5kFjQhHM) |
 | 49 | Framer | Framer Update: Interactive Shaders | 2026 | 80 秒 | 60 | 功能演示 | 暗色 UI · 着色器效果 | 高 | 已复刻 · 模板 20 | [YouTube](https://www.youtube.com/watch?v=rwMJ08sXNOA) |
 | 50 | Apple | The new 14” MacBook Pro with M6 | 2026 | 53 秒 | 24 | 产品片 | 三角形分屏 · 产品渲染 · 大字 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=xWfNhWn88Bc) |
