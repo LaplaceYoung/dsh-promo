@@ -1,0 +1,7 @@
+{
+ "id": "26", "slug": "26-claude-education", "comp": "T26", "fps": 30, "dur": 34.067, "bpm": 90,
+ "cuts": [10.4],
+ "highlights": [[0.3, 2.6], [4.0, 6.0], [9.0, 12.0], [19.8, 22.6], [27.2, 30.0]],
+ "ref": {"title": "Introducing Claude for Education", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=MIzq6LCMTtA", "dur": 34.06, "fps": 30},
+ "style": "暖灰底 · 卡片展开成分步弹窗 · 光标操作 · 右侧文档面板 · 收回成卡片"
+}

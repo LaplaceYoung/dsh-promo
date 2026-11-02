@@ -7,8 +7,15 @@ M=$1; T=$2; mkdir -p "$T/build"; tmp=$(mktemp -d -p "$T/build")   # same filesys
 dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$M")
 fps=$(python3 -c "import json;print(min(30,json.load(open('$T/meta.json'))['fps']))")
 vb=$(python3 -c "print(int(min(2600, ${MP4_MB:-4.8}*8192/$dur - 200)))")
+# PREVIEW_REMASTER=1: for an older master whose audio is off-spec, re-limit the master's audio (master.py) for the preview only.
+EXTRA_IN=(); AOPT=(-c:a copy)
+if [ -n "${PREVIEW_REMASTER:-}" ]; then
+  ffmpeg -v error -y -i "$M" -vn -ar 48000 "$tmp/a.wav"
+  python3 "$(dirname "$0")/master.py" "$tmp/a.wav" "$tmp/am.wav" "${PREVIEW_LUFS:--14}" >&2
+  EXTRA_IN=(-i "$tmp/am.wav"); AOPT=(-map 0:v -map 1:a -c:a aac -b:a 192k)
+fi
 ( cd "$tmp" && ffmpeg -v error -y -i "$M" -vf "scale=1280:720:flags=lanczos,fps=$fps" -c:v libx264 -preset slow -b:v ${vb}k -pass 1 -an -f mp4 /dev/null && \
-  ffmpeg -v error -y -i "$M" -vf "scale=1280:720:flags=lanczos,fps=$fps" -c:v libx264 -preset slow -b:v ${vb}k -pass 2 -pix_fmt yuv420p -c:a copy -movflags +faststart "$tmp/preview.mp4" )
+  ffmpeg -v error -y -i "$M" "${EXTRA_IN[@]}" -vf "scale=1280:720:flags=lanczos,fps=$fps" -c:v libx264 -preset slow -b:v ${vb}k -pass 2 -pix_fmt yuv420p "${AOPT[@]}" -movflags +faststart "$tmp/preview.mp4" )
 mv -f "$tmp/preview.mp4" "$T/preview.mp4"   # atomic: watchers never see a partial file
 segs=$(python3 -c "import json;print(' '.join(f'{a}-{b}' for a,b in json.load(open('$T/meta.json'))['highlights']))")
 mk() { w=$1; r=$2; nc=${3:-160}; di=${4:-sierra2_4a}; [ "$di" = bayer ] && di="bayer:bayer_scale=4" || true; fc=""; n=0; cat=""

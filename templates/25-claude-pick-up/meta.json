@@ -1,0 +1,7 @@
+{
+ "id": "25", "slug": "25-claude-pick-up", "comp": "T25", "fps": 30, "dur": 34.633, "bpm": 100,
+ "cuts": [1.033, 30.4, 34.6],
+ "highlights": [[0.3, 2.4], [4.0, 6.5], [13.0, 16.0], [19.0, 22.5], [29.8, 32.5]],
+ "ref": {"title": "Pick up where you left off with Claude", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=UdoY2l5TZaA", "dur": 34.69, "fps": 30},
+ "style": "米色底 · 一镜到底的浅色界面 · 漂浮的会议卡片收成一叠 · 形状收尾"
+}

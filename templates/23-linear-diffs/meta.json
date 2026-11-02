@@ -1,0 +1,7 @@
+{
+ "id": "23", "slug": "23-linear-diffs", "comp": "T23", "fps": 60, "dur": 51.967, "bpm": 87,
+ "cuts": [6.733, 12.767, 14.95, 25.3, 27.633, 31.95, 40.783],
+ "highlights": [[1.0, 3.0], [13.0, 14.6], [17.0, 19.0], [25.6, 27.0], [34.0, 36.0], [42.5, 44.0]],
+ "ref": {"title": "Introducing Linear Diffs", "company": "Linear", "year": 2026, "url": "https://www.youtube.com/watch?v=7gZBxBTapDQ", "dur": 51.97, "fps": 60},
+ "style": "暗色倾斜界面 · 浅景深 · 原话与润色的逐行对比 · 紫色确认按钮"
+}

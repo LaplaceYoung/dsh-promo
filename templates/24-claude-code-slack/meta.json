@@ -1,0 +1,7 @@
+{
+ "id": "24", "slug": "24-claude-code-slack", "comp": "T24", "fps": 30, "dur": 41.1, "bpm": 93,
+ "cuts": [3.2, 15.2, 19.067, 21.667, 24.733, 25.367, 25.733, 26.2, 29.567, 33.7],
+ "highlights": [[1.0, 3.2], [9.5, 12.5], [15.5, 17.5], [20.0, 21.6], [33.7, 36.5]],
+ "ref": {"title": "Claude Code in Slack", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=XpXImenrSPI", "dur": 41.1, "fps": 30},
+ "style": "米色底手绘开场 · 团队聊天窗口 · 状态卡片 · 绿色按钮收尾"
+}

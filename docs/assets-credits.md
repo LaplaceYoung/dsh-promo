@@ -41,3 +41,7 @@
 | 22 | `templates/_engine/public/t22-paper.webp` | Photograph of a Brown Surface（缩到 1280×720，正片叠底） | Clarissa Schwarz | <https://www.pexels.com/photo/8941371/> | [Pexels License](https://www.pexels.com/license/) |
 | 22 | `templates/_engine/audio/samples/fs851276-paper-fold.mp3` | Folding paper quickly in different ways（转单声道） | kindofjo | <https://freesound.org/s/851276/> | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | 22 | `templates/_engine/audio/samples/fs68224-paper-double.mp3` | paper_double.wav（转单声道） | XTYL33 | <https://freesound.org/s/68224/> | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| 23–27 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 27 | `templates/_engine/public/t27-streaks.webp` | Irregular Streaks of Lights（裁到 1600×900，片中调成蓝色） | Mahdi Bafande | <https://www.pexels.com/photo/15629018/> | [Pexels License](https://www.pexels.com/license/) |
+| 27 | `templates/_engine/public/t27-streaks-teal.webp` | Abstract Blue Light Streaks on Dark Background（旋转 90°，裁到 1600×900） | Djimmer Koster | <https://www.pexels.com/photo/29333569/> | [Pexels License](https://www.pexels.com/license/) |
+| 27 | `templates/_engine/public/t27-sea.webp` | Aerial Photo of Water Waves（裁到 960×640） | Magda Ehlers | <https://www.pexels.com/photo/988526/> | [Pexels License](https://www.pexels.com/license/) |
