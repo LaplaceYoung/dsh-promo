@@ -21,8 +21,18 @@ import { Film as F11 } from "../../11-raycast-new/Film"
 import M11 from "../../11-raycast-new/meta.json"
 import { Film as F12 } from "../../12-superhuman/Film"
 import M12 from "../../12-superhuman/meta.json"
+import { Film as F15 } from "../../15-arc-tidy-tabs/Film"
+import M15 from "../../15-arc-tidy-tabs/meta.json"
+import { Film as F17 } from "../../17-op1-field/Film"
+import M17 from "../../17-op1-field/meta.json"
+import { Film as F14 } from "../../14-figma-code-layers/Film"
+import M14 from "../../14-figma-code-layers/meta.json"
+import { Film as F13 } from "../../13-cursor-agents/Film"
+import M13 from "../../13-cursor-agents/meta.json"
+import { Film as F16 } from "../../16-notion-agents/Film"
+import M16 from "../../16-notion-agents/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (

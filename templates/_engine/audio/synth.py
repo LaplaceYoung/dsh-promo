@@ -197,3 +197,11 @@ class Session:
         mix *= f[:, None]; mix = np.tanh(mix * 0.9); mix /= np.max(np.abs(mix)) / 0.9
         wavfile.write(path, SR, (mix * 32767).astype(np.int16))
         print('wrote', path, round(self.D, 3), 's')
+
+# ---------- external samples (CC0 / CC-BY, see the template's ASSETS.md)
+def sample(path, mono=True):
+    """Decode an audio file (wav/mp3/ogg) to a float array at SR with ffmpeg."""
+    import subprocess
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, '-f', 'f32le', '-ac', '1' if mono else '2', '-ar', str(SR), '-'], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype=np.float32).astype(np.float64)
+    return x if mono else x.reshape(-1, 2)

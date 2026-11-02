@@ -6,6 +6,7 @@ export const LINE = "#eaeaec", T2 = "#6e7075", T3 = "#8a8c90", T4 = "#b4b6ba", T
 export const ACC = "#2f5fa8"
 export const SANS = "Geist, 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif"
 export const CJK = "'Noto Sans CJK SC', 'Noto Sans SC', Geist, sans-serif"
+export const HEAVY = "'Noto Sans SC', 'Noto Sans CJK SC', Geist, sans-serif"  // variable 100–900 (OFL), installed by scripts/fetch-fonts.sh
 export const MONO = "'Geist Mono', 'Noto Sans CJK SC', monospace"
 export const out = Easing.bezier(0.16, 1, 0.3, 1)
 export const inOut = Easing.bezier(0.65, 0, 0.35, 1)

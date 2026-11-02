@@ -24,7 +24,7 @@ English summary is [below](#english).
 
 ## 模板库
 
-除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 12 个。
+除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 17 个。
 
 | 编号 | 名称 | 参考片 | 风格 | 时长 | 预览 |
 |---|---|---|---|---|---|
@@ -40,6 +40,11 @@ English summary is [below](#english).
 | 10 | [浅灰底产品色阵列](templates/10-apple-homepod-mini/) | [Apple · The new HomePod mini 2](https://www.youtube.com/watch?v=xLL4UnrLNWs) | 浅灰白底 · 产品色彩阵列 · 逐词渐变字 · 极简俯拍 | 40.0 秒 | [GIF](templates/10-apple-homepod-mini/preview.gif) |
 | 11 | [黑色缎面 + 玻璃界面微距](templates/11-raycast-new/) | [Raycast · New Raycast. Coming 2026](https://www.youtube.com/watch?v=Mi173xGb0ZA) | 黑色缎面 3D 背景 · 玻璃质感界面微距 · 浅景深 · 黑底等宽小字收尾 | 38.6 秒 | [GIF](templates/11-raycast-new/preview.gif) |
 | 12 | [云雾渐变 + 套件分章](templates/12-superhuman/) | [Superhuman · Superhuman](https://www.youtube.com/watch?v=4XKq7qGnJus) | 云雾渐变底 · 悬浮产品界面 · 米色图标转场 · 套件式分章 | 60.4 秒 | [GIF](templates/12-superhuman/preview.gif) |
+| 13 | [浅灰打字字卡 + 壁纸上的应用窗口](templates/13-cursor-agents/) | [Cursor · Introducing Cursor 2.0 and Composer](https://www.youtube.com/watch?v=An8IM-kPyms) | 浅灰打字字卡 · 柱状对比 · 壁纸上的应用窗口 · 黑底标志收尾 | 64.5 秒 | [GIF](templates/13-cursor-agents/preview.gif) |
+| 14 | [灰色画布 + 多人光标](templates/14-figma-code-layers/) | [Figma · Code Layers](https://www.youtube.com/watch?v=UMDUAHmhkT8) | 灰色画布 · 多人光标 · 手机画板 · 等宽字墙 · 像素块收尾 | 34.9 秒 | [GIF](templates/14-figma-code-layers/preview.gif) |
+| 15 | [品牌蓝粗体字卡 + 侧栏微距](templates/15-arc-tidy-tabs/) | [The Browser Company · Tidy Tabs by Arc](https://www.youtube.com/watch?v=DHTmMtJzRrc) | 品牌蓝粗体字卡 · 侧栏微距 · 风景壁纸 · 一键整理 | 20.6 秒 | [GIF](templates/15-arc-tidy-tabs/preview.gif) |
+| 16 | [手绘小人 + 蓝框页面 + 卡片墙](templates/16-notion-agents/) | [Notion · Introducing Notion 3.0 · Agents](https://www.youtube.com/watch?v=R1cF4T4lgI4) | 手绘小人 · 蓝框页面 · 超大打字 · 声波 · 卡片墙 | 90.0 秒 | [GIF](templates/16-notion-agents/preview.gif) |
+| 17 | [白底产品摄影 + 细小字卡](templates/17-op1-field/) | [teenage engineering · introducing OP–1 field](https://www.youtube.com/watch?v=Fab7sp30pg0) | 白底产品摄影 · 键帽微距 · 细小字卡逐词替换 · 漏光收尾 | 28.1 秒 | [GIF](templates/17-op1-field/preview.gif) |
 
 从模板 12 开始，参考片里的实拍和照片会换成许可允许再分发的公开素材，署名见 [docs/assets-credits.md](docs/assets-credits.md)。
 
@@ -175,7 +180,7 @@ Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、
 
 Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
 
-**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman so far): same length, cut points, tempo and camera moves, with MosMos content and synthesized music. Twelve templates exist (01–12, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
+**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Seventeen templates exist (01–17, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
 
 **Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
 

@@ -1,0 +1,7 @@
+{
+ "id": "13", "slug": "13-cursor-agents", "comp": "T13", "fps": 60, "dur": 64.483, "bpm": 113,
+ "cuts": [8.483, 11.367, 33.317, 42.617, 44.567, 45.25, 46.45, 62.283],
+ "highlights": [[2.4, 4.4], [5.0, 7.0], [13.0, 15.0], [24.0, 27.0], [62.3, 64.4]],
+ "ref": {"title": "Introducing Cursor 2.0 and Composer", "company": "Anysphere (Cursor)", "year": 2025, "url": "https://www.youtube.com/watch?v=An8IM-kPyms", "dur": 64.48, "fps": 60},
+ "style": "浅灰打字字卡 · 柱状对比 · 壁纸上的应用窗口 · 黑底标志收尾"
+}
