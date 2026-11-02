@@ -24,7 +24,7 @@ English summary is [below](#english).
 
 ## 模板库
 
-除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 27 个。
+除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 32 个。
 
 | 编号 | 名称 | 参考片 | 风格 | 时长 | 预览 |
 |---|---|---|---|---|---|
@@ -55,6 +55,11 @@ English summary is [below](#english).
 | 25 | [米色底 + 一镜到底的会议记录](templates/25-claude-pick-up/) | [Anthropic · Pick up where you left off with Claude](https://www.youtube.com/watch?v=UdoY2l5TZaA) | 米色底 · 一镜到底的浅色界面 · 漂浮的会议卡片收成一叠 · 形状收尾 | 34.6 秒 | [GIF](templates/25-claude-pick-up/preview.gif) |
 | 26 | [暖灰底 + 卡片展开成分步弹窗](templates/26-claude-education/) | [Anthropic · Introducing Claude for Education](https://www.youtube.com/watch?v=MIzq6LCMTtA) | 暖灰底 · 卡片展开成分步弹窗 · 光标操作 · 右侧文档面板 | 34.1 秒 | [GIF](templates/26-claude-education/preview.gif) |
 | 27 | [黑底蓝色霓虹 + 光轨字卡](templates/27-framer-3/) | [Framer · Framer 3.0 with Agents, Branching, and a new Community](https://www.youtube.com/watch?v=6aioEoCdBJw) | 黑底蓝色霓虹光线扫出界面 · 发光按钮 · 快切功能卡 · 光轨字卡 | 75.2 秒 | [GIF](templates/27-framer-3/preview.gif) |
+| 28 | [米色手绘开场 + 会议纪要写成文档和表格](templates/28-claude-files/) | [Anthropic · Claude can create and edit files](https://www.youtube.com/watch?v=EV89Ws8Ui9Y) | 米色手绘线稿开场 · 暖白界面大字特写 · 灰色遮罩下的整理过程 · 文档与表格 · 线稿图标阵列收尾 | 59.5 秒 | [GIF](templates/28-claude-files/preview.gif) |
+| 29 | [浅色网格底 + 一个键记下整场会](templates/29-claude-cowork/) | [Anthropic · Introducing Cowork: Claude Code for the rest of your work](https://www.youtube.com/watch?v=UAmKyyZ-b9E) | 浅色网格底 · 切换开关化成标志 · 任务卡片 · 问答卡和进度卡 · 衬线字收尾 | 68.6 秒 | [GIF](templates/29-claude-cowork/preview.gif) |
+| 30 | [米色底 + 桌面窗口一镜到底](templates/30-claude-code-desktop/) | [Anthropic · Claude Code on desktop](https://www.youtube.com/watch?v=zrcCS9oHjtI) | 米色底 · 浅色桌面窗口一镜到底 · 推近切换模式 · 擦除到衬线字卡 · 像素标志收尾 | 20.4 秒 | [GIF](templates/30-claude-code-desktop/preview.gif) |
+| 31 | [橙色底 + 一连串快切的使用场景](templates/31-claude-artifacts/) | [Anthropic · Turn ideas into interactive artifacts](https://www.youtube.com/watch?v=iSn77jvjojA) | 橙色底 · 弹跳的方块变成输入框 · 长镜头的步进网格 · 一连串快切的使用场景 · 倾斜卡片 · 标志卡片收尾 | 45.1 秒 | [GIF](templates/31-claude-artifacts/preview.gif) |
+| 32 | [淡紫底 + 桌面上一扇扇写字的窗口](templates/32-claude-imagine/) | [Anthropic · An experimental new way to design software](https://www.youtube.com/watch?v=dGiqrsv530Y) | 淡紫底和飘动的白线 · 底部输入条 · 桌面上一扇扇打开的窗口 · 右侧的输入记录 · 米白卡片收尾 | 102.0 秒 | [GIF](templates/32-claude-imagine/preview.gif) |
 
 从模板 12 开始，参考片里的实拍和照片会换成许可允许再分发的公开素材，署名见 [docs/assets-credits.md](docs/assets-credits.md)。
 
@@ -190,7 +195,7 @@ Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、
 
 Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
 
-**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering, Vercel, Framer, Moonshot AI so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Twenty-seven templates exist (01–27, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
+**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering, Vercel, Framer, Moonshot AI so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Thirty-two templates exist (01–32, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
 
 **Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
 

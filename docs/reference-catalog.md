@@ -10,7 +10,7 @@
 - 62 条都能用 yt-dlp 从 YouTube 下载（本地 360p 研究副本已全部取得，不进仓库）。
 - 类型：功能演示 37 条，品牌片 17 条，产品片 3 条，纪录短片 2 条，制作片 2 条，访谈 1 条。
 - 复刻适配度（能否不靠实拍、只用界面和图形复刻）：高 31 条，中 18 条，低 13 条。
-- 已复刻：03（Anthropic）、04（Linear）、05（Linear）、06（The Browser Company）、07（Notion）、08（Anthropic）、09（Cursor）、10（Apple）、11（Raycast）、12（Superhuman）、13（Cursor）、14（Figma）、15（The Browser Company）、16（Notion）、17（teenage engineering）、18（Linear）、19（Vercel）、20（Framer）、21（Moonshot AI）、22（Anthropic）、23（Linear）、24（Anthropic）、25（Anthropic）、26（Anthropic）、27（Framer）。模板 01、02 的参考片在早期制作时没有记录来源链接，这里不列出。
+- 已复刻：03（Anthropic）、04（Linear）、05（Linear）、06（The Browser Company）、07（Notion）、08（Anthropic）、09（Cursor）、10（Apple）、11（Raycast）、12（Superhuman）、13（Cursor）、14（Figma）、15（The Browser Company）、16（Notion）、17（teenage engineering）、18（Linear）、19（Vercel）、20（Framer）、21（Moonshot AI）、22（Anthropic）、23（Linear）、24（Anthropic）、25（Anthropic）、26（Anthropic）、27（Framer）、28（Anthropic）、29（Anthropic）、30（Anthropic）、31（Anthropic）、32（Anthropic）。模板 01、02 的参考片在早期制作时没有记录来源链接，这里不列出。
 
 字段说明：时长按秒取整；帧率和最高分辨率读自 YouTube 源文件信息；「适配度」是主观判断，「高」表示主要是界面、字卡和图形，适合直接复刻。
 
@@ -24,16 +24,16 @@
 | 4 | Anthropic | Introducing Claude Opus 4.5 | 2025 | 49 秒 | 24 | 访谈 | 人物访谈 · 字幕 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=56kq0VTkU4k) |
 | 5 | Anthropic | Introducing Claude Opus 4.6 | 2026 | 39 秒 | 24 | 品牌片 | 衬线大字 + 实拍混剪 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=dPn3GBI8lII) |
 | 6 | Anthropic | Introducing Claude Haiku 4.5 | 2025 | 40 秒 | 60 | 功能演示 | 珊瑚底线描插画 + UI 演示 | 高 | 已复刻 · 模板 08 | [YouTube](https://www.youtube.com/watch?v=ccQSHQ3VGIc) |
-| 7 | Anthropic | Turn ideas into interactive artifacts | 2025 | 45 秒 | 30 | 功能演示 | 珊瑚底 UI 卡片 · 交互作品展示 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=iSn77jvjojA) |
+| 7 | Anthropic | Turn ideas into interactive artifacts | 2025 | 45 秒 | 30 | 功能演示 | 珊瑚底 UI 卡片 · 交互作品展示 | 高 | 已复刻 · 模板 31 | [YouTube](https://www.youtube.com/watch?v=iSn77jvjojA) |
 | 8 | Anthropic | Claude now has memory | 2025 | 59 秒 | 30 | 功能演示 | 暖白 UI · 思维导图式卡片 | 高 | 已复刻 · 模板 22 | [YouTube](https://www.youtube.com/watch?v=PupmfSttxlc) |
-| 9 | Anthropic | Claude can create and edit files | 2025 | 60 秒 | 24 | 功能演示 | 暖白 UI · 文档/表格生成 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=EV89Ws8Ui9Y) |
-| 10 | Anthropic | Introducing Cowork: Claude Code for the rest of your work | 2026 | 69 秒 | 24 | 功能演示 | 暖白 UI · 任务卡片 · 文字转场 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=UAmKyyZ-b9E) |
-| 11 | Anthropic | Claude Code on desktop | 2025 | 20 秒 | 30 | 功能演示 | 短版 UI 演示 · 结尾字卡 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=zrcCS9oHjtI) |
+| 9 | Anthropic | Claude can create and edit files | 2025 | 60 秒 | 24 | 功能演示 | 暖白 UI · 文档/表格生成 | 高 | 已复刻 · 模板 28 | [YouTube](https://www.youtube.com/watch?v=EV89Ws8Ui9Y) |
+| 10 | Anthropic | Introducing Cowork: Claude Code for the rest of your work | 2026 | 69 秒 | 24 | 功能演示 | 暖白 UI · 任务卡片 · 文字转场 | 高 | 已复刻 · 模板 29 | [YouTube](https://www.youtube.com/watch?v=UAmKyyZ-b9E) |
+| 11 | Anthropic | Claude Code on desktop | 2025 | 20 秒 | 30 | 功能演示 | 短版 UI 演示 · 结尾字卡 | 高 | 已复刻 · 模板 30 | [YouTube](https://www.youtube.com/watch?v=zrcCS9oHjtI) |
 | 12 | Anthropic | Claude 3.5 Sonnet for agentic coding | 2024 | 95 秒 | 30 | 功能演示 | 珊瑚底 + 暗色编辑器录屏 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=A598ESCoC70) |
 | 13 | Anthropic | Claude · Computer use for coding | 2024 | 183 秒 | 24 | 功能演示 | 录屏为主 + 真人讲解 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=vH2f7cjXjKI) |
 | 14 | Anthropic | Introducing Claude Fable 5 | 2026 | 113 秒 | 24 | 品牌片 | 人物访谈 + 像素图形 + 衬线字 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=Y9Wz2PV404E) |
 | 15 | Anthropic | Introducing Claude Fable 5.1 | 2026 | 85 秒 | 24 | 品牌片 | 人物访谈 + 手绘图形 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=ROF2Nv_KjOM) |
-| 16 | Anthropic | An experimental new way to design software | 2025 | 102 秒 | 60 | 功能演示 | 淡紫底 UI · 窗口漂移 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=dGiqrsv530Y) |
+| 16 | Anthropic | An experimental new way to design software | 2025 | 102 秒 | 60 | 功能演示 | 淡紫底 UI · 窗口漂移 | 高 | 已复刻 · 模板 32 | [YouTube](https://www.youtube.com/watch?v=dGiqrsv530Y) |
 | 17 | Anthropic | A camera that makes poems | 2025 | 90 秒 | 24 | 纪录短片 | 真人纪录 · 胶片质感 | 低 | 可下载 | [YouTube](https://www.youtube.com/watch?v=FAsY40pbbnw) |
 | 18 | Anthropic | Claude Code in Slack | 2025 | 41 秒 | 30 | 功能演示 | 白底 Slack UI · 图标开场 | 高 | 已复刻 · 模板 24 | [YouTube](https://www.youtube.com/watch?v=XpXImenrSPI) |
 | 19 | Anthropic | Pick up where you left off with Claude | 2025 | 35 秒 | 30 | 功能演示 | 暖白 UI · 卡片扇出 | 高 | 已复刻 · 模板 25 | [YouTube](https://www.youtube.com/watch?v=UdoY2l5TZaA) |

@@ -1,0 +1,7 @@
+{
+ "id": "32", "slug": "32-claude-imagine", "comp": "T32", "fps": 60, "dur": 102.0, "bpm": 85,
+ "cuts": [13.063, 29.129, 39.59, 53.303, 65.332, 95.162],
+ "highlights": [[5.5, 10.5], [14.0, 19.0], [31.0, 36.5], [43.5, 51.5], [55.0, 61.5], [76.0, 92.0], [95.5, 101.5]],
+ "ref": {"title": "An experimental new way to design software", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=dGiqrsv530Y", "dur": 102.01, "fps": 59.94},
+ "style": "淡紫底和飘动的白线 · 底部输入条 · 桌面上一扇扇打开的窗口 · 右侧的输入记录 · 米白卡片收尾"
+}
