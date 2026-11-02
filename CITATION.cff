@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "dsh-promo: programmatic product promo videos with Remotion and Python"
+type: software
+authors:
+  - alias: LaplaceYoung
+repository-code: "https://github.com/LaplaceYoung/dsh-promo"
+url: "https://github.com/LaplaceYoung/dsh-promo"
+license: MIT
+date-released: "2026-11-03"
+keywords:
+  - remotion
+  - programmatic video
+  - product launch video
+  - motion graphics
+  - beat sync

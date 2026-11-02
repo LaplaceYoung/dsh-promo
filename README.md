@@ -1,68 +1,69 @@
-# dsh-promo
+# dsh-promo：用代码复刻一支产品宣传片的结构和节奏（Remotion + Python）
 
-这个仓库用代码把 DeepSeek Harness「创造模式」宣传片的结构和节奏一帧帧拆出来，再套到两个产品上，各做了一支宣传片：
+dsh-promo 是一个开源的「代码生成视频」示例：参照 DeepSeek Harness「创造模式」宣传片的分镜结构和卡点节奏，用 Remotion（React 视频框架）逐帧渲染画面，用 Python 合成配乐和 UI 音效，给 MosMos 和 MOSS Create 两个产品各做了一支 99.8 秒的产品宣传片。仓库里有全部代码、工程文件，以及完整的复刻思路和过程；参考片本身不在仓库里，本项目和 DeepSeek、MosMos、MOSS 都没有关系。
 
-- **MosMos**（mosmos.io，桌面语音输入工具）
-- **MOSS Create**（mossland.studio，访问会跳转到 create.moss.cn，是一个 AI 图像、视频和配音创作平台）
+如果你想用代码或 AI 辅助做产品宣传片、发布会视频，或者想学分镜复刻和按 BPM 节拍卡点剪辑，这里的流程和代码可以直接拿去改。
 
-两支片子都是 99.8 秒、37 个镜头。剪辑点和参考片对齐，统一吸附到 110 BPM 的八分音符网格上。画面用 Remotion 逐帧渲染，配乐和音效全部用 Python 合成，没有用任何采样。
+English summary is [below](#english).
 
-这里放的是全部代码、工程文件，还有复刻的思路和过程。参考片本身**不在仓库里**。
+## 成片预览
 
-## 成片
+### MosMos 宣传片（桌面语音输入工具）
 
-### MosMos
+[![MosMos 产品宣传片预览：Remotion 代码生成的 99.8 秒语音输入工具发布视频，110 BPM 卡点剪辑](preview/mosmos-preview.gif)](preview/mosmos-promo.mp4)
 
-<video src="https://raw.githubusercontent.com/LaplaceYoung/dsh-promo/main/preview/mosmos-promo.mp4" controls width="100%"></video>
+点击动图观看完整 99.8 秒 1080p 成片：[preview/mosmos-promo.mp4](preview/mosmos-promo.mp4)
 
-播放不了的话直接打开：[preview/mosmos-promo.mp4](preview/mosmos-promo.mp4)
+### MOSS Create 宣传片（AI 图像、视频和配音创作平台）
 
-### MOSS Create
+[![MOSS Create 产品宣传片预览：Remotion 代码生成的 99.8 秒 AI 创作平台发布视频，真实网页录屏加卡点剪辑](preview/moss-create-preview.gif)](preview/moss-create-promo.mp4)
 
-<video src="https://raw.githubusercontent.com/LaplaceYoung/dsh-promo/main/preview/moss-create-promo.mp4" controls width="100%"></video>
+点击动图观看完整 99.8 秒 1080p 成片：[preview/moss-create-promo.mp4](preview/moss-create-promo.mp4)
 
-播放不了的话直接打开：[preview/moss-create-promo.mp4](preview/moss-create-promo.mp4)
+动图是从成片里剪的约 15 秒精华片段（800 px 宽，没有声音）。完整 MP4 为了放进仓库压成了 1080p、30 fps，每个约 13 MB；原始母版是 1920×1080、60 fps，可以按下面的步骤自己渲染。
 
-两个文件都是完整的 99.8 秒成片，为了放进仓库，重新压成了 1080p、30 fps，每个大约 13 MB。原始母版是 60 fps，可以按下面的步骤自己渲染。
+## 关键数据
 
-## 目录
+| 项目 | 数值 |
+|---|---|
+| 片长 | 99.8 秒（5989 帧） |
+| 分辨率 / 帧率 | 1920×1080，60 fps；MOSS Create 另有重新排版的 1080×1920 竖版 |
+| 镜头数 | 37 个镜头 + 14 个镜头内小切，成片里计划的剪辑点共 51 个 |
+| 节拍 | 110 BPM，所有剪辑点吸附到八分音符网格（0.2727 秒） |
+| 段落 | 照参考片的 9 段结构和时长比例 |
+| 响度 | −14 LUFS，真峰值约 −0.5 dB |
+| 配乐 | numpy / scipy 合成，没有用任何采样 |
 
-```
-docs/
-  method.md               复刻思路和过程（怎么拆参考片、怎么对节拍、怎么做产品画面和配乐、怎么检查）
-  reference-analysis.md   参考片拆解：逐镜头表、节拍、配色、段落比例（纯文字，没有画面）
-mosmos/
-  build/timeline.py       时间线：37 个镜头 + 镜头内小切 + 打字和音效事件，生成 timeline.json
-  build/shotlist.py       生成和参考片逐条对照的镜头表
-  build/finish.sh         混音、竖版
-  audio/audio.py          配乐和 UI 音效合成（numpy / scipy）
-  remotion/src/           Film.tsx（每个镜头的画面）、lib.tsx（打字、光标、logo 等组件）
-  remotion/public/        MosMos 官网的 logo 和插画纹理
-  ref/shots.py            参考片镜头表（给 shotlist.py 用）
-  tools/                  抓 mosmos.io 截图的 Playwright 脚本
-  mosmos-shotlist.md      镜头对照表
-  PROGRESS.md             重建命令
-moss-create/
-  build/  audio/  remotion/  ref/   同上；remotion 里多了竖版构图 MossV
-  tools/                  抓 create.moss.cn 的截图、录屏、模板素材的脚本
-  assets/README.md        哪些素材没放进仓库、为什么、怎么重新抓
-  mossland-shotlist.md    镜头对照表
-  PROGRESS.md             重建命令
-preview/                  两支成片（1080p / 30 fps 压缩版）
-```
+## 怎么用代码做一支产品宣传片？
 
-## 环境
+画面写成 React 组件，交给 Remotion 一帧一帧渲染成视频；时间线、打字内容和音效事件写在一个 Python 脚本里，生成 `timeline.json`，画面和音效都读这一份，所以声画不会错位。配乐也用代码合成，最后用 ffmpeg 混音、做响度标准化。改文案或节奏，只要改 `build/timeline.py` 和 `remotion/src/Film.tsx` 再重新渲染。
+
+## 分镜复刻：复刻一支宣传片要几步？
+
+我们的做法分 7 步，细节都在 [docs/method.md](docs/method.md)：
+
+1. **拆到帧**：ffprobe 量基本参数，按 5 fps 抽帧通读；逐帧算亮度差找硬切，软转场对着抽帧人工定时间，整理出 37 个镜头和 14 个镜头内小切；把屏幕上的文字逐张抄下来再核对。
+2. **找真实节拍**：librosa 直接给出 143.6 BPM，但对不上剪辑点。对 onset 包络做自相关，间隔落在 0.273 / 0.819 / 1.091 / 2.183 秒，算出真实速度是 110 BPM，3-3-2 切分把自动检测带偏了。60–72 秒是半速段。
+3. **网格对齐**：每个镜头的入点取参考片对应时刻，再吸附到最近的八分音符。吸附后和参考片的偏差最大约 0.13 秒，和节拍网格的偏差不超过 8 ms。
+4. **段落对位**：参考片的 9 段和比例照搬，每一段换上目标产品里功能相当的东西，文案只用产品官网上有的说法。
+5. **做产品画面**：MOSS Create 用 Playwright + CDP 录真实网页；MosMos 是桌面软件，照官网演示组件重画。
+6. **合成配乐和音效**：110 BPM 的鼓、贝斯、琶音和铺底，半速段和加速段放在参考片同样的位置；键盘声、点击、甩出、故障声都挂在时间线事件上。
+7. **检查**：每个镜头取静帧逐张看，ffprobe 核规格，`scdet` 扫剪辑点和计划逐个对，ebur128 量响度，再把参考片和成片左右并排、分声道戴耳机看一遍。
+
+逐镜头时间、画面描述、节拍和配色见 [docs/reference-analysis.md](docs/reference-analysis.md)（纯文字，没有画面）。
+
+## 需要什么工具？
 
 - Node.js 20 以上（我们用的是 24），Remotion 4.0.539（`npm ci` 会装好）
 - ffmpeg（7.x 可以）
 - Python 3，需要 `numpy scipy pillow`
 - 字体：Noto Sans CJK SC、Inter、Geist、Geist Mono，要装成系统字体。Debian / Ubuntu 上 `apt install fonts-noto-cjk`，Inter 和 Geist 可以从 Google Fonts 下载。没装中文字体会出现方块字。
 - 只有重新抓 MOSS Create 素材时才需要 Playwright（`tools/package.json`，`npx playwright install chromium`）
-- 渲染用的是 `--gl=swangle`（无 GPU 的服务器也能跑）。一支横版大约渲染 6–7 分钟（7 并发）。
+- 渲染用 `--gl=swangle`，没有 GPU 的服务器也能跑。一支横版大约 6–7 分钟（7 并发）。
 
 ## 怎么重建
 
-具体命令在 `mosmos/PROGRESS.md` 和 `moss-create/PROGRESS.md`。大致顺序：
+完整命令在 [mosmos/PROGRESS.md](mosmos/PROGRESS.md) 和 [moss-create/PROGRESS.md](moss-create/PROGRESS.md)。大致顺序：
 
 ```bash
 cd mosmos                      # 或 moss-create
@@ -72,15 +73,77 @@ cd remotion && npm ci && npx remotion render src/index.ts Mosmos ../build/silent
 cd .. && build/finish.sh
 ```
 
-MOSS Create 的合成名叫 `Moss`（横版）和 `MossV`（竖版）。渲染前要先按 `moss-create/assets/README.md` 把录屏和模板素材抓回来，仓库里没有这些，直接渲染会缺文件。
+MOSS Create 的合成名叫 `Moss`（横版）和 `MossV`（竖版）。渲染前要先按 [moss-create/assets/README.md](moss-create/assets/README.md) 把录屏和模板素材抓回来，仓库里没有这些，直接渲染会缺文件。
 
-改文案改节奏，只动 `build/timeline.py`（时间和打字内容）和 `remotion/src/Film.tsx`（画面）。音效的时间点也从 timeline.json 读，所以画面和声音不会对不上。
+## 常见问题
 
-## 几件要说清楚的事
+**和 DeepSeek 有关系吗？** 没有。DeepSeek Harness 的宣传片只是结构和节奏的参考，仓库里没有它的视频、音频或截图。
 
-- **参考片**：DeepSeek Harness「创造模式」宣传片，版权归原作者。仓库里没有它的视频、音频、截图或缩略图，`docs/` 里只有文字拆解（镜头时间、画面描述、屏幕上的文字）。想对照的话，自己找公开版本看。
-- **MOSS Create 成片里的模板内容**：画面中出现的模板封面和预览视频是 create.moss.cn 上社区用户的作品，有些带第三方品牌，版权归各自作者和品牌方，仓库只是按网站原样录屏展示。
+**能拿来做自己产品的宣传片吗？** 可以。代码是 MIT 协议。换产品主要改三处：`build/timeline.py` 的镜头和文案、`remotion/src/Film.tsx` 的画面、`remotion/public/` 的素材。
+
+**为什么 BPM 检测结果是 143.6，实际是 110？** 3-3-2 节奏型的重音间隔是 0.819 秒，折算约 146 BPM，自动检测被它带偏。用自相关看几个间隔之间的比例关系更可靠。
+
+**横版和竖版是一套代码吗？** MOSS Create 是。所有界面镜头写成「缩放 + 焦点坐标」，横版按这个推拉，竖版用同一个焦点裁更窄的区域，是重新排版而不是加黑边。MosMos 的竖版做得早，还是居中加模糊垫底。
+
+## 目录
+
+| 路径 | 内容 |
+|---|---|
+| `docs/method.md` | 复刻思路和过程：拆片、对节拍、做画面和配乐、检查、踩过的坑 |
+| `docs/reference-analysis.md` | 参考片拆解：逐镜头表、节拍、配色、段落比例（纯文字） |
+| `mosmos/build/` | `timeline.py`（37 个镜头 + 打字和音效事件）、`shotlist.py`、`finish.sh` |
+| `mosmos/audio/audio.py` | 配乐和 UI 音效合成 |
+| `mosmos/remotion/src/` | `Film.tsx`（每个镜头的画面）、`lib.tsx`（打字、光标、logo 等组件） |
+| `mosmos/remotion/public/` | MosMos 官网的 logo 和插画纹理 |
+| `mosmos/ref/shots.py` | 参考片镜头表，给 `shotlist.py` 对照用 |
+| `mosmos/mosmos-shotlist.md` | 镜头对照表 |
+| `moss-create/` | 结构同上；remotion 里多了竖版构图 `MossV` |
+| `moss-create/tools/` | 抓 create.moss.cn 截图、录屏、模板素材的 Playwright 脚本 |
+| `moss-create/assets/README.md` | 哪些素材没放进仓库、为什么、怎么重新抓 |
+| `moss-create/mossland-shotlist.md` | 镜头对照表 |
+| `preview/` | 两支完整成片（1080p / 30 fps）和预览动图 |
+
+## 技术栈
+
+Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、librosa 用于分析）、Playwright（Chrome DevTools Protocol 录屏）。
+
+## 版权和声明
+
+- **参考片**：DeepSeek Harness「创造模式」宣传片，版权归原作者。仓库里没有它的视频、音频、截图或缩略图，`docs/` 里只有文字拆解（镜头时间、画面描述、屏幕上的文字）。
+- **MOSS Create 成片里的模板内容**：画面中出现的模板封面和预览视频是 create.moss.cn 上社区用户的作品，有些带第三方品牌，版权归各自作者和品牌方，片中只是按网站原样录屏展示。
 - **产品名称和标志**：MosMos、MOSS Create、DeepSeek 等名称和 logo 归各自所有者。`mosmos/remotion/public/` 里的 logo 和纹理取自 mosmos.io，`moss-create/remotion/public/logo.svg` 取自 create.moss.cn，放在这里只是为了能把工程跑起来。
-- **这不是官方宣传片**。两支片子是练手和方法演示，和这几家公司都没有关系。
+- **这不是官方宣传片**。两支片子是练手和方法演示，和 DeepSeek、MosMos、MOSS 都没有关系。
 - MosMos 是要安装的桌面软件，我们没有真实录屏，界面是照官网演示重画的。MOSS Create 用的是不登录时的真实录屏和截图，没法展示生成过程和结果。
-- 代码按 MIT 协议开源（见 `LICENSE`），协议不覆盖上面提到的第三方内容。
+- 代码按 MIT 协议开源（见 [LICENSE](LICENSE)），协议不覆盖上面提到的第三方内容。引用本项目可以用 [CITATION.cff](CITATION.cff)。
+
+作者：[LaplaceYoung](https://github.com/LaplaceYoung)
+
+---
+
+<a id="english"></a>
+
+## English
+
+**dsh-promo** is an open-source example of programmatic video: two 99.8-second product launch videos (motion graphics) built entirely in code. The cut structure and beat timing follow the DeepSeek Harness "Create Mode" promo as a structure reference; visuals are rendered frame by frame with Remotion (React), and the music and UI sound effects are synthesized in Python with no samples. The two films are for MosMos (a desktop voice-input app) and MOSS Create (an AI image, video and voice creation platform). This project is not affiliated with DeepSeek, MosMos or MOSS, and the reference film is not included.
+
+**Previews:** click the animated previews above, or open the full films directly: [MosMos (1080p, 99.8 s)](preview/mosmos-promo.mp4) · [MOSS Create (1080p, 99.8 s)](preview/moss-create-promo.mp4).
+
+**Key facts:** 99.8 s, 1920×1080 at 60 fps (plus a re-laid-out 1080×1920 vertical cut for MOSS Create), 37 shots plus 14 in-shot sub-cuts (51 planned cuts), 110 BPM with every cut snapped to an eighth-note grid, the reference's 9-part act structure and proportions, mastered to −14 LUFS.
+
+**How it was made (7 steps, full write-up in Chinese in [docs/method.md](docs/method.md)):**
+
+1. Break the reference down to frames: frame-difference cut detection, manual timing for soft transitions, on-screen text transcription.
+2. Find the real tempo: librosa reported 143.6 BPM; autocorrelation of the onset envelope showed 110 BPM with a 3-3-2 syncopation and a half-time section at 60–72 s.
+3. Snap every shot's in-point to the nearest eighth note (max 0.13 s from the reference, ≤ 8 ms from the grid).
+4. Map each act of the reference to an equivalent feature of the target product, using only wording from the product's own site.
+5. Capture product footage: real browser recordings via Playwright + CDP screencast for MOSS Create; redrawn UI for MosMos (desktop app).
+6. Synthesize music and foley with numpy/scipy, driven by the same `timeline.json` as the visuals.
+7. QA: per-shot stills, ffprobe specs, `scdet` cut scan against the plan, EBU R128 loudness, side-by-side review with the reference.
+
+Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
+
+**Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
+
+**License and rights:** code is MIT ([LICENSE](LICENSE)). The reference film, product names and logos belong to their owners; community template works shown in the MOSS Create film belong to their creators. These are not official promos.
+
+Author: [LaplaceYoung](https://github.com/LaplaceYoung)
