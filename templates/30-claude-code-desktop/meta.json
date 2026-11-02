@@ -1,0 +1,7 @@
+{
+ "id": "30", "slug": "30-claude-code-desktop", "comp": "T30", "fps": 30, "dur": 20.367, "bpm": 90,
+ "cuts": [],
+ "highlights": [[0.0, 2.6], [2.8, 4.2], [8.0, 12.0], [12.2, 15.0], [16.0, 19.0]],
+ "ref": {"title": "Claude Code on desktop", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=zrcCS9oHjtI", "dur": 20.39, "fps": 30},
+ "style": "米色底 · 浅色桌面窗口一镜到底 · 推近切换模式 · 擦除到衬线字卡 · 像素标志收尾"
+}
