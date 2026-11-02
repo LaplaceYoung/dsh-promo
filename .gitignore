@@ -1,0 +1,22 @@
+node_modules/
+# renders and intermediates
+*.mp4
+!preview/*.mp4
+*.wav
+build/silent*.mp4
+build/stills*/
+build/render*.log
+build/cutscan.json
+# captured third-party material (re-capture with the scripts in tools/)
+footage/
+site/
+ref/f5/
+ref/key/
+ref/sheets/
+moss-create/remotion/public/c/
+moss-create/remotion/public/v/
+moss-create/remotion/public/f/
+moss-create/remotion/public/s/*
+!moss-create/remotion/public/s/menu.png
+__pycache__/
+.DS_Store

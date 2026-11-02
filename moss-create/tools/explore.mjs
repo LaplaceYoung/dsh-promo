@@ -1,0 +1,13 @@
+import { chromium } from "playwright"
+const b = await chromium.launch()
+const ctx = await b.newContext({ viewport:{width:1920,height:1080}, deviceScaleFactor:1, locale:"zh-CN" })
+const p = await ctx.newPage()
+await p.goto("https://create.moss.cn/",{waitUntil:"networkidle",timeout:60000}); await p.waitForTimeout(3000)
+await p.screenshot({path:"../site/home.png"})
+const nav = await p.$$eval("a,button", els=>els.map(e=>({t:(e.innerText||e.getAttribute('aria-label')||'').trim().slice(0,30),h:e.getAttribute('href')})).filter(x=>x.t))
+console.log(JSON.stringify(nav.slice(0,70)))
+const css = await p.evaluate(()=>{const g=getComputedStyle(document.body);const h=[...document.querySelectorAll('h1,h2')].map(e=>[e.innerText.slice(0,30),getComputedStyle(e).fontFamily,getComputedStyle(e).fontSize,getComputedStyle(e).fontWeight,getComputedStyle(e).color]);return {bg:g.backgroundColor,font:g.fontFamily,color:g.color,h}})
+console.log(JSON.stringify(css))
+const h = await p.evaluate(()=>document.documentElement.scrollHeight); console.log('h',h)
+await p.screenshot({path:"../site/home-full.png",fullPage:true})
+await b.close()
