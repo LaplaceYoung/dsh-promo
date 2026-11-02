@@ -1,0 +1,7 @@
+{
+ "id": "29", "slug": "29-claude-cowork", "comp": "T29", "fps": 24, "dur": 68.625, "bpm": 110,
+ "cuts": [2.25, 14.792, 16.083, 19.708, 28.167, 42.25, 43.5, 44.125, 45.625, 47.375, 53.5, 57.375, 62.167],
+ "highlights": [[4.5, 8.5], [11.0, 14.5], [23.5, 27.5], [35.0, 41.0], [53.5, 57.0], [62.5, 68.0]],
+ "ref": {"title": "Introducing Cowork: Claude Code for the rest of your work", "company": "Anthropic", "year": 2026, "url": "https://www.youtube.com/watch?v=UAmKyyZ-b9E", "dur": 68.64, "fps": 24},
+ "style": "浅色网格底 · 切换开关化成标志 · 任务卡片 · 问答卡和进度卡 · 衬线字收尾"
+}

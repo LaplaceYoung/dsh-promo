@@ -98,7 +98,7 @@ export const Film: React.FC = () => {
 	const cur = path(t, [[0, 1300, 900], [0.6, 1300, 900], [M.click1 - 0.1, 1160, 560], [M.open + 0.4, 1160, 560], [M.focus - 0.1, 700, 470], [M.type + 1.6, 720, 480], [M.create - 0.15, 1350, 720], [M.step2 + 0.4, 1350, 720],
 		[M.drag, 1560, 520], [M.over + 0.4, 1000, 520], [C[0] + 0.3, 1000, 540], [M.cont - 0.15, 1380, 735], [M.page + 0.3, 1380, 735], [M.pick - 0.2, 250, 503], [M.send - 0.15, 1118, 428], [M.chat + 0.5, 1300, 700]])
 	const down = [M.click1, M.focus, M.create, M.cont, M.pick, M.send].some((c) => t > c - 0.05 && t < c + 0.12) || (t > M.drag && t < C[0])
-	const k: CamKey[] = [[0, 1, 960, 540], [M.zoom, 1, 960, 540], [M.zoom + 1.0, 1.25, 820, 470], [M.chat, 1.25, 820, 470], [M.chat + 0.6, 1, 960, 540], [M.panel + 1.2, 1.05, 1100, 520], [M.close, 1.05, 1100, 520], [M.close + 0.5, 1, 960, 540]]
+	const k: CamKey[] = [[0, 1.45, 960, 540], [M.page - 0.1, 1.45, 960, 540], [M.page + 0.5, 1.0, 960, 540], [M.zoom, 1.0, 960, 540], [M.zoom + 1.0, 1.25, 820, 470], [M.chat, 1.25, 820, 470], [M.chat + 0.6, 0.82, 960, 540], [M.panel + 1.2, 0.9, 1060, 520], [M.close, 0.9, 1060, 520], [M.close + 0.5, 1.45, 960, 540]]
 	const dragOn = t > M.drag - 0.2 && t < C[0]
 	return (
 		<AbsoluteFill style={{ background: BG }}>

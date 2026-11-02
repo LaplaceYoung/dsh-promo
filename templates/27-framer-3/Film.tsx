@@ -68,8 +68,16 @@ const Dots: React.FC<{ t: number }> = ({ t }) => (
 )
 const ROWS: [string, string, string][] = [["林清禾", "人名", "林清和"], ["Nimbus", "项目", "尼姆布斯"], ["Figma", "工具", "飞马"], ["周舟", "人名", "周州"], ["首页改版", "项目", "首页改板"], ["Notion", "工具", "诺神"], ["李经理", "人名", "李经历"], ["交互稿", "术语", "交互搞"], ["API_KEY", "代码", "API key"], ["rg", "代码", "RG"], ["品牌素材", "术语", "品牌速材"], ["台灯样品", "项目", "台登样品"]]
 
+// Per-shot framing pass (batch 6): zoom each shot so UI scale matches the reference. [scale, originX, originY]
+const Z: Record<number, [number, number, number]> = { 0: [2.0, 600, 420], 1: [1.3, 420, 200], 2: [1.3, 960, 540], 3: [1.35, 960, 540], 4: [1.5, 1200, 300], 6: [1.5, 960, 540], 7: [1.4, 960, 540], 9: [1.3, 960, 420], 10: [1.4, 960, 540], 17: [1.3, 960, 540], 18: [1.4, 960, 540], 19: [1.4, 960, 540], 21: [1.25, 960, 540], 22: [1.25, 960, 540], 23: [1.25, 960, 540] }
 export const Film: React.FC = () => {
 	const t = useT()
+	const i = C.filter((c) => t >= c).length
+	const z = Z[i]
+	if (!z) return <Shot t={t} />
+	return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><AbsoluteFill style={{ transform: `scale(${z[0]})`, transformOrigin: `${z[1]}px ${z[2]}px` }}><Shot t={t} /></AbsoluteFill></AbsoluteFill>
+}
+const Shot: React.FC<{ t: number }> = ({ t }) => {
 	const i = C.filter((c) => t >= c).length, u = t - (i ? C[i - 1] : 0)
 	const center = (n: React.ReactNode, s = 1) => <AbsoluteFill style={{ background: "#000", alignItems: "center", justifyContent: "center" }}><div style={{ transform: `scale(${s})` }}>{n}</div></AbsoluteFill>
 	switch (i) {
@@ -109,7 +117,7 @@ export const Film: React.FC = () => {
 		case 23: return <Trails t={t} t0={C[22]} src="t27-streaks-teal.webp"><div>会议也一起记下</div></Trails>
 		case 24: { const f = clamp01((t - M.flash) / 0.6); return <AbsoluteFill style={{ background: "#000" }}><Trails t={t} t0={C[23]} src="t27-streaks.webp" hue={205}><div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 90 }}>MosMos</div></Trails><AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #fff 0%, #9cc0ff 35%, rgba(40,90,255,0) 75%)", opacity: f }} /></AbsoluteFill> }
 		case 25: return <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #0b2a8a 0%, #000 70%)", alignItems: "center", justifyContent: "center" }}><div style={{ filter: `drop-shadow(0 0 18px ${B1}) drop-shadow(0 0 50px #2a5cff)`, transform: `scale(${lerp(u, 0, 2.7, 1.25, 1.1)})` }}><LogoPixels size={300} t={t} mode="static" invert /></div></AbsoluteFill>
-		case 26: { const p = clamp01(u / 1.1); return <AbsoluteFill style={{ background: "#000", alignItems: "center", justifyContent: "center" }}><div style={{ width: 600 * (1 - p) + 20, height: 26 * (1 - p) + 20, borderRadius: 30, background: "#cfe0ff", boxShadow: GLOW, opacity: 1 - p * 0.3 }} /></AbsoluteFill> }
-		default: return <AbsoluteFill style={{ background: "#000", alignItems: "center", justifyContent: "center" }}><div style={{ opacity: clamp01(u / 0.4) * clamp01((M.fade + 2.0 - t) / 2.0) }}><LogoPixels size={70} t={t} mode="static" invert /></div></AbsoluteFill>
+		case 26: { const p = clamp01(u / 1.1); return <AbsoluteFill style={{ background: "#000", alignItems: "center", justifyContent: "center" }}><div style={{ width: 1000 * (1 - p) + 30, height: 30 * (1 - p) + 20, borderRadius: 30, background: "#cfe0ff", boxShadow: GLOW, opacity: 1 - p * 0.3 }} /></AbsoluteFill> }
+		default: return <AbsoluteFill style={{ background: "#000", alignItems: "center", justifyContent: "center" }}><div style={{ opacity: clamp01(u / 0.4) * clamp01((M.fade + 2.0 - t) / 2.0) }}><LogoPixels size={140} t={t} mode="static" invert /></div></AbsoluteFill>
 	}
 }

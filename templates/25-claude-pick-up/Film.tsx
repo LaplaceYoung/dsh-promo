@@ -33,7 +33,7 @@ const Spin: React.FC<{ t: number }> = ({ t }) => <div style={{ width: 22, height
 
 const Window: React.FC<{ t: number }> = ({ t }) => {
 	const g = clamp01((t - C[0]) / 0.6), sh = clamp01((t - M.shrink) / (C[1] - M.shrink))
-	const s = (0.3 + 0.7 * inOut(g)) * (1 - 0.95 * inOut(sh))
+	const s = (0.65 + 0.35 * inOut(g)) * (1 - 0.9 * inOut(sh))
 	const home = t < M.send
 	const ansLen = Math.floor(clamp01((t - M.ans) / 2.2) * ANS.join("").length)
 	let used = 0
@@ -84,18 +84,18 @@ export const Film: React.FC = () => {
 	if (t < C[0]) {
 		const b = clamp01((t - M.blob) / (C[0] - M.blob))
 		return <AbsoluteFill style={{ background: BG, alignItems: "center", justifyContent: "center" }}>
-			<div style={{ opacity: clamp01((t - M.spark) / 0.2) * (1 - b) }}><LogoPixels size={60} t={t} mode="spin" invert /></div>
-			<div style={{ position: "absolute", left: 960 - 80, top: 540 - 60, width: 160, height: 120, borderRadius: "46% 54% 50% 50%", background: WIN, transform: `scale(${b * 3})`, opacity: b }} />
+			<div style={{ opacity: clamp01((t - M.spark) / 0.2) * (1 - b) }}><LogoPixels size={180} t={t} mode="spin" invert /></div>
+			<div style={{ position: "absolute", left: 960 - 80, top: 540 - 60, width: 160, height: 120, borderRadius: "46% 54% 50% 50%", background: WIN, transform: `scale(${b * 8})`, opacity: b }} />
 		</AbsoluteFill>
 	}
 	if (t < C[1]) {
-		const k: CamKey[] = [[C[0], 1, 960, 540], [M.say - 0.2, 1, 960, 540], [M.say + 0.6, 1.3, 960, 520], [M.send, 1.3, 960, 520], [M.send + 0.6, 1.15, 960, 430], [M.back, 1.15, 960, 430],
-			[M.back + 1.2, 0.72, 960, 540], [M.stack + 1.5, 0.72, 960, 540], [M.card + 0.6, 1.15, 960, 400], [M.fold, 1.15, 960, 420], [M.ans + 2.2, 1.15, 960, 540], [M.say2, 1.15, 960, 640], [M.send2 + 0.3, 1.15, 960, 640], [M.shrink + 0.2, 1, 960, 540]]
+		const k: CamKey[] = [[C[0], 1, 960, 540], [M.home, 1.05, 960, 540], [M.say - 0.2, 1.45, 960, 560], [M.say + 0.6, 1.7, 960, 560], [M.send, 1.7, 960, 560], [M.send + 0.6, 1.75, 980, 400], [M.back, 1.75, 980, 430],
+			[M.back + 1.2, 0.9, 960, 540], [M.stack + 1.5, 0.9, 960, 540], [M.card + 0.6, 1.7, 980, 420], [M.fold, 1.7, 980, 440], [M.ans + 2.2, 1.7, 980, 560], [M.say2, 1.7, 980, 700], [M.send2 + 0.3, 1.7, 980, 700], [M.shrink + 0.2, 1, 960, 540]]
 		return <AbsoluteFill style={{ background: BG }}><Camera t={t} keys={k}><Window t={t} /><Chips t={t} /></Camera></AbsoluteFill>
 	}
 	const l = clamp01((t - M.logo) / 0.4)
-	return <AbsoluteFill style={{ background: BG, alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 20 }}>
-		{t < M.logo && <div style={{ width: 60, height: 60, borderRadius: 30, background: WIN, transform: `scale(${lerp(t, C[1], M.logo, 1.4, 0.6)})` }} />}
-		{t >= M.logo && <><LogoPixels size={56} t={t} mode="in" t0={M.logo} /><div style={{ opacity: clamp01((t - M.logo - 0.3) / 0.4) * l }}><Wordmark size={56} color={INKC} /></div></>}
+	return <AbsoluteFill style={{ background: BG, alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 30 }}>
+		{t < M.logo && <div style={{ width: 60, height: 60, borderRadius: 30, background: WIN, transform: `scale(${lerp(t, C[1], M.logo, 3.2, 1.2)})` }} />}
+		{t >= M.logo && <><LogoPixels size={88} t={t} mode="in" t0={M.logo} /><div style={{ opacity: clamp01((t - M.logo - 0.3) / 0.4) * l }}><Wordmark size={100} color={INKC} /></div></>}
 	</AbsoluteFill>
 }
