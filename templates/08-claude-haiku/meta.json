@@ -1,0 +1,7 @@
+{
+ "id": "08", "slug": "08-claude-haiku", "comp": "T08", "fps": 60, "dur": 40.067, "bpm": 97,
+ "cuts": [4.033, 13.85, 14.3, 19.1, 19.25, 19.817, 27.767],
+ "highlights": [[0.3, 2.6], [4.1, 5.2], [11.0, 12.4], [14.4, 15.6], [24.0, 25.0], [28.3, 29.9], [31.0, 32.0], [37.4, 38.4]],
+ "ref": {"title": "Introducing Claude Haiku 4.5", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=ccQSHQ3VGIc", "dur": 40.08, "fps": 60},
+ "style": "色底线描插画 · 窗口从一个点长出 · 计数徽标 · 衬线字 + 环绕笔触"
+}

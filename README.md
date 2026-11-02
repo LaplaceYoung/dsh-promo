@@ -24,7 +24,7 @@ English summary is [below](#english).
 
 ## 模板库
 
-除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 7 个。
+除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 12 个。
 
 | 编号 | 名称 | 参考片 | 风格 | 时长 | 预览 |
 |---|---|---|---|---|---|
@@ -35,6 +35,13 @@ English summary is [below](#english).
 | 05 | [纸上画出 MosMos](templates/05-linear-orbit/) | [Linear · Orbit (by Linear)](https://www.youtube.com/watch?v=PsY9J2DB1FM) | 黑白微距 · 笔画生长 · 浅景深 · 极简字标 | 28.6 秒 | [GIF](templates/05-linear-orbit/preview.gif) |
 | 06 | [蓝底字卡快切](templates/06-arc-live-folders/) | [The Browser Company · Introducing Live Folders in Arc](https://www.youtube.com/watch?v=x1TV6rBi_jM) | 粗体大字卡 · 品牌色满屏 · 屏幕微距 · 快切 | 29.9 秒 | [GIF](templates/06-arc-live-folders/preview.gif) |
 | 07 | [大字卡 + 色块分屏](templates/07-notion-ai/) | [Notion · Introducing the new Notion AI](https://www.youtube.com/watch?v=S92KX8-Hmlc) | 暖白大字 · 色块分屏 · 吉祥物头像 | 56.6 秒 | [GIF](templates/07-notion-ai/preview.gif) |
+| 08 | [点长成窗口 + 计数徽标](templates/08-claude-haiku/) | [Anthropic · Introducing Claude Haiku 4.5](https://www.youtube.com/watch?v=ccQSHQ3VGIc) | 色底线描插画 · 窗口从一个点长出 · 计数徽标 · 衬线字 + 环绕笔触 | 40.1 秒 | [GIF](templates/08-claude-haiku/preview.gif) |
+| 09 | [米白拼贴 + 复古电脑](templates/09-cursor-software-changing/) | [Cursor · Software is changing](https://www.youtube.com/watch?v=2SkrTnGMsr0) | 米白底拼贴 · 复古电脑 · 碎片字 · 彩色几何块 · 打字字卡 | 54.6 秒 | [GIF](templates/09-cursor-software-changing/preview.gif) |
+| 10 | [浅灰底产品色阵列](templates/10-apple-homepod-mini/) | [Apple · The new HomePod mini 2](https://www.youtube.com/watch?v=xLL4UnrLNWs) | 浅灰白底 · 产品色彩阵列 · 逐词渐变字 · 极简俯拍 | 40.0 秒 | [GIF](templates/10-apple-homepod-mini/preview.gif) |
+| 11 | [黑色缎面 + 玻璃界面微距](templates/11-raycast-new/) | [Raycast · New Raycast. Coming 2026](https://www.youtube.com/watch?v=Mi173xGb0ZA) | 黑色缎面 3D 背景 · 玻璃质感界面微距 · 浅景深 · 黑底等宽小字收尾 | 38.6 秒 | [GIF](templates/11-raycast-new/preview.gif) |
+| 12 | [云雾渐变 + 套件分章](templates/12-superhuman/) | [Superhuman · Superhuman](https://www.youtube.com/watch?v=4XKq7qGnJus) | 云雾渐变底 · 悬浮产品界面 · 米色图标转场 · 套件式分章 | 60.4 秒 | [GIF](templates/12-superhuman/preview.gif) |
+
+从模板 12 开始，参考片里的实拍和照片会换成许可允许再分发的公开素材，署名见 [docs/assets-credits.md](docs/assets-credits.md)。
 
 每个模板目录里有 `analysis.md`（参考片逐镜拆解，纯文字）、`README.md`（复刻了什么、关键数字、怎么渲染）、`preview.gif` 和完整的 720p `preview.mp4`。03 以后的模板共用 `templates/_engine/` 里的 Remotion 工程、组件和配乐合成器，渲染一个模板只要一条命令：
 
@@ -168,7 +175,7 @@ Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、
 
 Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
 
-**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion so far): same length, cut points, tempo and camera moves, with MosMos content and synthesized music. Seven templates exist (01–07, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
+**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman so far): same length, cut points, tempo and camera moves, with MosMos content and synthesized music. Twelve templates exist (01–12, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
 
 **Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
 

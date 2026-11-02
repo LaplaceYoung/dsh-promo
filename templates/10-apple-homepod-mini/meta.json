@@ -1,0 +1,7 @@
+{
+ "id": "10", "slug": "10-apple-homepod-mini", "comp": "T10", "fps": 30, "dur": 40.033, "bpm": 87,
+ "cuts": [0.067, 2.867, 6.3, 13.633, 16.467, 18.433, 18.733, 19.5, 21.9, 24.867, 25.433, 27.867, 31.867, 34.967],
+ "highlights": [[0.3, 2.6], [3.0, 4.2], [7.0, 8.0], [11.2, 12.8], [19.0, 20.4], [22.2, 23.6], [25.5, 27.0], [30.0, 31.0]],
+ "ref": {"title": "The new HomePod mini 2: Rich, room-filling sound in a compact design", "company": "Apple", "year": 2026, "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs", "dur": 40.04, "fps": 30},
+ "style": "浅灰白底 · 产品色彩阵列 · 逐词渐变字 · 极简俯拍"
+}

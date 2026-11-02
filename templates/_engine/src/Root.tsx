@@ -11,8 +11,18 @@ import { Film as F06 } from "../../06-arc-live-folders/Film"
 import M06 from "../../06-arc-live-folders/meta.json"
 import { Film as F07 } from "../../07-notion-ai/Film"
 import M07 from "../../07-notion-ai/meta.json"
+import { Film as F08 } from "../../08-claude-haiku/Film"
+import M08 from "../../08-claude-haiku/meta.json"
+import { Film as F09 } from "../../09-cursor-software-changing/Film"
+import M09 from "../../09-cursor-software-changing/meta.json"
+import { Film as F10 } from "../../10-apple-homepod-mini/Film"
+import M10 from "../../10-apple-homepod-mini/meta.json"
+import { Film as F11 } from "../../11-raycast-new/Film"
+import M11 from "../../11-raycast-new/meta.json"
+import { Film as F12 } from "../../12-superhuman/Film"
+import M12 from "../../12-superhuman/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (
