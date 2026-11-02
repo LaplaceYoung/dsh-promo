@@ -1,0 +1,7 @@
+{
+ "id": "06", "slug": "06-arc-live-folders", "comp": "T06", "fps": 30, "dur": 29.933, "bpm": 125,
+ "cuts": [0.125, 1.46, 3.545, 5.464, 7.007, 8.091, 9.092, 9.968, 11.053, 12.179, 12.804, 13.639, 14.306, 15.307, 15.807, 16.475, 17.559, 19.019, 22.856, 23.815, 24.775, 25.734, 27.361],
+ "highlights": [[1.6, 3.3], [5.5, 7.0], [8.1, 10.0], [12.2, 13.6], [17.6, 19.0], [22.9, 24.7], [27.4, 28.4]],
+ "ref": {"title": "Introducing Live Folders in Arc | Your sidebar is alive", "company": "The Browser Company", "year": 2024, "url": "https://www.youtube.com/watch?v=x1TV6rBi_jM", "dur": 29.95, "fps": 23.976},
+ "style": "粗体大字卡 · 品牌色满屏 · 屏幕微距斜拍 · 快切卡点"
+}

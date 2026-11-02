@@ -1,0 +1,25 @@
+{
+  "name": "dsh-promo-templates",
+  "version": "1.0.0",
+  "description": "Shared Remotion engine for dsh-promo templates",
+  "scripts": {
+    "studio": "remotion studio src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.540",
+    "@remotion/cli": "^4.0.539",
+    "@remotion/renderer": "^4.0.540",
+    "@types/react": "^19.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.539",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}

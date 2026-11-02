@@ -2,6 +2,7 @@ node_modules/
 # renders and intermediates
 *.mp4
 !preview/*.mp4
+!templates/*/preview.mp4
 *.wav
 build/silent*.mp4
 build/stills*/
@@ -22,3 +23,6 @@ __pycache__/
 .DS_Store
 # no contact sheets / frame grabs in the repo
 *.jpg
+# template intermediates
+templates/*/build/
+templates/_engine/node_modules/

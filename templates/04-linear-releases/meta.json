@@ -1,0 +1,56 @@
+{
+ "id": "04",
+ "slug": "04-linear-releases",
+ "comp": "T04",
+ "fps": 60,
+ "dur": 30.067,
+ "bpm": 110,
+ "cuts": [
+  4.683,
+  9.067,
+  11.0,
+  15.567,
+  21.733,
+  26.2,
+  26.5
+ ],
+ "highlights": [
+  [
+   1.0,
+   3.0
+  ],
+  [
+   6.0,
+   7.6
+  ],
+  [
+   9.1,
+   10.0
+  ],
+  [
+   11.2,
+   12.8
+  ],
+  [
+   22.0,
+   22.8
+  ],
+  [
+   24.3,
+   25.3
+  ],
+  [
+   26.5,
+   27.3
+  ]
+ ],
+ "ref": {
+  "title": "Introducing Linear Releases",
+  "company": "Linear",
+  "year": 2026,
+  "url": "https://www.youtube.com/watch?v=6dIwFoQ0eVg",
+  "dur": 30.07,
+  "fps": 60
+ },
+ "style": "暗色 3D 倾斜界面 · 线条汇流 · 景深 · 等宽字打字收尾"
+}

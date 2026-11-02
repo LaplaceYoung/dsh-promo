@@ -1,0 +1,7 @@
+{
+ "id": "03", "slug": "03-claude-extended-thinking", "comp": "T03", "fps": 60, "dur": 39.867, "bpm": 79,
+ "cuts": [9.167, 10.933, 12.867, 21.2, 24.3, 29.633, 38.833],
+ "highlights": [[2.0, 4.2], [9.4, 10.6], [11.6, 12.8], [15.2, 17.2], [21.3, 23.4], [30.0, 31.2], [35.4, 37.9]],
+ "ref": {"title": "Claude 3.7 Sonnet with extended thinking", "company": "Anthropic", "year": 2025, "url": "https://www.youtube.com/watch?v=t3nnDXa81Hs", "dur": 39.87, "fps": 60},
+ "style": "暖色 UI 演示 · 连续镜头推拉 · 宏观特写"
+}

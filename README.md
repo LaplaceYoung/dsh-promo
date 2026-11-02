@@ -22,7 +22,30 @@ English summary is [below](#english).
 
 动图是从成片里剪的约 15 秒精华片段（800 px 宽，没有声音）。完整 MP4 为了放进仓库压成了 1080p、30 fps，每个约 13 MB；原始母版是 1920×1080、60 fps，可以按下面的步骤自己渲染。
 
-## 关键数据
+## 模板库
+
+除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 7 个。
+
+| 编号 | 名称 | 参考片 | 风格 | 时长 | 预览 |
+|---|---|---|---|---|---|
+| 01 | MosMos 宣传片 | DeepSeek Harness「创造模式」宣传片 | 深色界面 · 110 BPM 卡点 · 9 段结构 | 99.8 秒 | [GIF](preview/mosmos-preview.gif) |
+| 02 | MOSS Create 宣传片 | 同上 | 真实网页录屏 · 卡点剪辑 · 横竖两版 | 99.8 秒 | [GIF](preview/moss-create-preview.gif) |
+| 03 | [思考过程，一镜到底](templates/03-claude-extended-thinking/) | [Anthropic · Claude 3.7 Sonnet with extended thinking](https://www.youtube.com/watch?v=t3nnDXa81Hs) | 暖色 UI 演示 · 连续推拉 · 微距 | 39.9 秒 | [GIF](templates/03-claude-extended-thinking/preview.gif) |
+| 04 | [线条汇流](templates/04-linear-releases/) | [Linear · Introducing Linear Releases](https://www.youtube.com/watch?v=6dIwFoQ0eVg) | 暗色 3D 倾斜界面 · 线条汇流 · 景深 · 打字收尾 | 30.1 秒 | [GIF](templates/04-linear-releases/preview.gif) |
+| 05 | [纸上画出 MosMos](templates/05-linear-orbit/) | [Linear · Orbit (by Linear)](https://www.youtube.com/watch?v=PsY9J2DB1FM) | 黑白微距 · 笔画生长 · 浅景深 · 极简字标 | 28.6 秒 | [GIF](templates/05-linear-orbit/preview.gif) |
+| 06 | [蓝底字卡快切](templates/06-arc-live-folders/) | [The Browser Company · Introducing Live Folders in Arc](https://www.youtube.com/watch?v=x1TV6rBi_jM) | 粗体大字卡 · 品牌色满屏 · 屏幕微距 · 快切 | 29.9 秒 | [GIF](templates/06-arc-live-folders/preview.gif) |
+| 07 | [大字卡 + 色块分屏](templates/07-notion-ai/) | [Notion · Introducing the new Notion AI](https://www.youtube.com/watch?v=S92KX8-Hmlc) | 暖白大字 · 色块分屏 · 吉祥物头像 | 56.6 秒 | [GIF](templates/07-notion-ai/preview.gif) |
+
+每个模板目录里有 `analysis.md`（参考片逐镜拆解，纯文字）、`README.md`（复刻了什么、关键数字、怎么渲染）、`preview.gif` 和完整的 720p `preview.mp4`。03 以后的模板共用 `templates/_engine/` 里的 Remotion 工程、组件和配乐合成器，渲染一个模板只要一条命令：
+
+```bash
+cd templates/_engine && npm install
+RENDER_DIR=/tmp/renders scripts/render.sh 06-arc-live-folders
+```
+
+候选参考片一共整理了 62 支（Anthropic、OpenAI、Cursor、Linear、Notion、Figma、Apple 等 19 家），标题、年份、时长、风格和是否适合复刻都在 [docs/reference-catalog.md](docs/reference-catalog.md)。
+
+## 关键数据（01、02 两支长片）
 
 | 项目 | 数值 |
 |---|---|
@@ -102,6 +125,9 @@ MOSS Create 的合成名叫 `Moss`（横版）和 `MossV`（竖版）。渲染�
 | `moss-create/assets/README.md` | 哪些素材没放进仓库、为什么、怎么重新抓 |
 | `moss-create/mossland-shotlist.md` | 镜头对照表 |
 | `preview/` | 两支完整成片（1080p / 30 fps）和预览动图 |
+| `templates/_engine/` | 模板共用的 Remotion 工程、组件（`src/mos.tsx`、`src/kit.tsx`）、配乐合成器（`audio/synth.py`）和渲染、检查脚本 |
+| `templates/NN-*/` | 单个模板：`Film.tsx`、`timeline.py`、`audio.py`、`meta.json`、`analysis.md`、预览 |
+| `docs/reference-catalog.md` | 62 支候选参考片的目录 |
 
 ## 技术栈
 
@@ -141,6 +167,8 @@ Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、
 7. QA: per-shot stills, ffprobe specs, `scdet` cut scan against the plan, EBU R128 loudness, side-by-side review with the reference.
 
 Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
+
+**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion so far): same length, cut points, tempo and camera moves, with MosMos content and synthesized music. Seven templates exist (01–07, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
 
 **Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
 
