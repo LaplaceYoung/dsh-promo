@@ -91,8 +91,14 @@ import { Film as F46 } from "../../46-spline-hana/Film"
 import M46 from "../../46-spline-hana/meta.json"
 import { Film as F47 } from "../../47-linear-agents/Film"
 import M47 from "../../47-linear-agents/meta.json"
+import { Film as F48 } from "../../48-dictation-intro/Film"
+import M48 from "../../48-dictation-intro/meta.json"
+import { Film as F49 } from "../../49-pitch-2/Film"
+import M49 from "../../49-pitch-2/meta.json"
+import { Film as F50 } from "../../50-claude-polished-files/Film"
+import M50 from "../../50-claude-polished-files/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32], [F33, M33], [F34, M34], [F35, M35], [F36, M36], [F37, M37], [F38, M38], [F39, M39], [F40, M40], [F41, M41], [F42, M42], [F43, M43], [F44, M44], [F45, M45], [F46, M46], [F47, M47]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32], [F33, M33], [F34, M34], [F35, M35], [F36, M36], [F37, M37], [F38, M38], [F39, M39], [F40, M40], [F41, M41], [F42, M42], [F43, M43], [F44, M44], [F45, M45], [F46, M46], [F47, M47], [F48, M48], [F49, M49], [F50, M50]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (

@@ -53,3 +53,9 @@
 | 43–47 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
 | 44 | 复用 `templates/_engine/public/` 里模板 12、13、14、16、21、27 的素材：`t12-woman.webp`、`t13-wall.webp`、`t14-armchair.webp`、`t14-chair.webp`、`t14-lamp.webp`、`t14-lounge.webp`、`t16-p1-head.svg`、`t21-earth.webp`、`t27-sea.webp`（没有新增文件） | 见上面各模板的行 | 见上面各模板的行 | 见上面各模板的行 | Pexels License / CC0 1.0 |
 | 46 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Fusion Pixel Font 12px Proportional zh_hans（2026.10.25 版） | TakWolf | <https://github.com/TakWolf/fusion-pixel-font> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 48–50 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 48 | `templates/_engine/public/t48-talk.mp4` | A Man Talking to the Camera（转成 1280×720、25 fps、无声） | MART PRODUCTION | <https://www.pexels.com/video/7261921/> | [Pexels License](https://www.pexels.com/license/) |
+| 48 | 复用 `templates/_engine/public/` 里模板 16 的素材：`t16-p2-head.svg`（没有新增其他文件） | 见上面模板 16 的行 | 见上面模板 16 的行 | 见上面模板 16 的行 | CC0 1.0 |
+| 49 | `templates/_engine/public/t49-crowd.webp` | Crowd and Illuminated Stage at Concert（缩到 1280×720） | Sami TÜRK | <https://www.pexels.com/photo/20532119/> | [Pexels License](https://www.pexels.com/license/) |
+| 49 | 复用 `templates/_engine/public/` 里模板 15、17、20、27、41 的素材：`t15-forest.webp`、`t17-kb-white.webp`、`t20-studio.webp`、`t27-sea.webp`、`t41-mountain.webp` | 见上面各模板的行 | 见上面各模板的行 | 见上面各模板的行 | Pexels License / CC0 1.0 |
+| 50 | 没有外部照片、视频或录音素材（画面全部代码绘制，配乐 numpy 合成） | — | — | — | — |
