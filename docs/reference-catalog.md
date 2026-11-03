@@ -10,7 +10,7 @@
 - 91 条都能用 yt-dlp 从 YouTube 下载（本地低分辨率研究副本已取得，不进仓库）。
 - 类型：功能演示 62 条，品牌片 21 条，产品片 3 条，纪录短片 2 条，制作片 2 条，访谈 1 条。
 - 复刻适配度（能否不靠实拍、只用界面和图形复刻）：高 50 条，中 26 条，低 15 条。
-- 已复刻：03（Anthropic）、04（Linear）、05（Linear）、06（The Browser Company）、07（Notion）、08（Anthropic）、09（Cursor）、10（Apple）、11（Raycast）、12（Superhuman）、13（Cursor）、14（Figma）、15（The Browser Company）、16（Notion）、17（teenage engineering）、18（Linear）、19（Vercel）、20（Framer）、21（Moonshot AI）、22（Anthropic）、23（Linear）、24（Anthropic）、25（Anthropic）、26（Anthropic）、27（Framer）、28（Anthropic）、29（Anthropic）、30（Anthropic）、31（Anthropic）、32（Anthropic）、33（Linear）、34（ElevenLabs）、35（OpenAI）、36（Stripe）、37（Framer）、38（Linear）、39（OpenAI）、40（Notion）、41（Pitch）、42（Framer）。模板 01、02 的参考片在早期制作时没有记录来源链接，这里不列出。
+- 已复刻：03（Anthropic）、04（Linear）、05（Linear）、06（The Browser Company）、07（Notion）、08（Anthropic）、09（Cursor）、10（Apple）、11（Raycast）、12（Superhuman）、13（Cursor）、14（Figma）、15（The Browser Company）、16（Notion）、17（teenage engineering）、18（Linear）、19（Vercel）、20（Framer）、21（Moonshot AI）、22（Anthropic）、23（Linear）、24（Anthropic）、25（Anthropic）、26（Anthropic）、27（Framer）、28（Anthropic）、29（Anthropic）、30（Anthropic）、31（Anthropic）、32（Anthropic）、33（Linear）、34（ElevenLabs）、35（OpenAI）、36（Stripe）、37（Framer）、38（Linear）、39（OpenAI）、40（Notion）、41（Pitch）、42（Framer）、43（Anthropic）、44（The Browser Company）、45（Linear）、46（Spline）、47（Linear）。模板 01、02 的参考片在早期制作时没有记录来源链接，这里不列出。
 
 字段说明：时长按秒取整；帧率和最高分辨率读自 YouTube 源文件信息；「适配度」是主观判断，「高」表示主要是界面、字卡和图形，适合直接复刻。
 
@@ -89,16 +89,16 @@
 | 69 | Pitch | Introducing Pitch 2.0 | 2023 | 82 秒 | 30 | 功能演示 | 紫白配色 · 打字字卡 · 幻灯片界面 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=tqfeE5G36tM) |
 | 70 | Linear | Introducing Code Intelligence | 2026 | 34 秒 | 60 | 功能演示 | 暗色倾斜文字 · 输入框 · 字卡 | 高 | 已复刻 · 模板 38 | [YouTube](https://www.youtube.com/watch?v=eKDf7I0TYpg) |
 | 71 | Linear | Loops updates | 2026 | 29 秒 | 60 | 功能演示 | 暗色弧线 · 等宽大写字 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=eQirSQ6Vpkw) |
-| 72 | Linear | Introducing Dashboards in Linear | 2025 | 44 秒 | 60 | 功能演示 | 暗色 3D 图表 · 景深 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=8Njlv_LwlQM) |
-| 73 | Linear | Introducing Linear For Agents | 2025 | 33 秒 | 30 | 功能演示 | 暗色界面 · 列表 · 字卡 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=sbwOQV5zY34) |
+| 72 | Linear | Introducing Dashboards in Linear | 2025 | 44 秒 | 60 | 功能演示 | 暗色 3D 图表 · 景深 | 高 | 已复刻 · 模板 45 | [YouTube](https://www.youtube.com/watch?v=8Njlv_LwlQM) |
+| 73 | Linear | Introducing Linear For Agents | 2025 | 33 秒 | 30 | 功能演示 | 暗色界面 · 列表 · 字卡 | 高 | 已复刻 · 模板 47 | [YouTube](https://www.youtube.com/watch?v=sbwOQV5zY34) |
 | 74 | Linear | Announcing Linear Reviews | 2026 | 25 秒 | 60 | 功能演示 | 暗色代码透视 · 衬线字 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=4r8YmQ6lfLo) |
 | 75 | OpenAI | ChatGPT for Word is now available | 2026 | 42 秒 | 30 | 功能演示 | 蓝白配色 · 文档界面 · 侧栏 | 高 | 已复刻 · 模板 39 | [YouTube](https://www.youtube.com/watch?v=lxVMdEpe0RQ) |
-| 76 | Anthropic | Your tools are now interactive in Claude | 2026 | 54 秒 | 24 | 功能演示 | 暖白 UI · 嵌入式工具卡片 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=bluAmTHoEow) |
+| 76 | Anthropic | Your tools are now interactive in Claude | 2026 | 54 秒 | 24 | 功能演示 | 暖白 UI · 嵌入式工具卡片 | 高 | 已复刻 · 模板 43 | [YouTube](https://www.youtube.com/watch?v=bluAmTHoEow) |
 | 77 | Anthropic | Create polished files in minutes with Sonnet 4.5 | 2025 | 79 秒 | 30 | 功能演示 | 暖白 UI · 文档和表格 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=Tdg_lkCMzY0) |
-| 78 | The Browser Company | Boosts by Arc · Meet Your New Internet | 2023 | 42 秒 | 24 | 功能演示 | 网页拼贴 · 大字 · 按钮特写 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=N0jMmiCS8oQ) |
+| 78 | The Browser Company | Boosts by Arc · Meet Your New Internet | 2023 | 42 秒 | 24 | 功能演示 | 网页拼贴 · 大字 · 按钮特写 | 高 | 已复刻 · 模板 44 | [YouTube](https://www.youtube.com/watch?v=N0jMmiCS8oQ) |
 | 79 | Framer | Framer Update: Instant Font Previews | 2026 | 69 秒 | 60 | 功能演示 | 暗色编辑器 · 字体切换 | 高 | 已复刻 · 模板 42 | [YouTube](https://www.youtube.com/watch?v=JAKF3RTbgek) |
 | 80 | Notion | Meet Custom Agents: Your 24/7 AI Team | 2026 | 71 秒 | 30 | 功能演示 | 白底列表飞散 · 卡片 · 深蓝收尾 | 高 | 已复刻 · 模板 40 | [YouTube](https://www.youtube.com/watch?v=yrEic418kjg) |
-| 81 | Spline | Introducing Hana - A new canvas for interactivity - by Spline | 2025 | 27 秒 | 30 | 功能演示 | 暗色组件阵列 · 字卡 · 彩色图形 | 高 | 可下载 | [YouTube](https://www.youtube.com/watch?v=ZsYijIY7qBA) |
+| 81 | Spline | Introducing Hana - A new canvas for interactivity - by Spline | 2025 | 27 秒 | 30 | 功能演示 | 暗色组件阵列 · 字卡 · 彩色图形 | 高 | 已复刻 · 模板 46 | [YouTube](https://www.youtube.com/watch?v=ZsYijIY7qBA) |
 | 82 | Spline | Introducing Omma - 3D, Apps, and Websites  - By Spline | 2026 | 39 秒 | 25 | 功能演示 | 暗色 UI · 输入框 · 生成画面 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=8tbyVaWkYfY) |
 | 83 | ElevenLabs | Dictation is now on the ElevenLabs mobile app | 2026 | 26 秒 | 30 | 功能演示 | 白底语音球 · 手机界面 · 少量人物照 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=kf8BuWceR-A) |
 | 84 | The Browser Company | Introducing Live Calendar · Never be late again | 2024 | 26 秒 | 60 | 功能演示 | 实拍开场 + 品牌色字卡 + 日历界面 | 中 | 可下载 | [YouTube](https://www.youtube.com/watch?v=stjr27o9lN4) |

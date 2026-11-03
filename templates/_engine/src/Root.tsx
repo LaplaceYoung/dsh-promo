@@ -81,8 +81,18 @@ import { Film as F41 } from "../../41-pitch-ai-actions/Film"
 import M41 from "../../41-pitch-ai-actions/meta.json"
 import { Film as F42 } from "../../42-framer-font-previews/Film"
 import M42 from "../../42-framer-font-previews/meta.json"
+import { Film as F43 } from "../../43-claude-interactive-tools/Film"
+import M43 from "../../43-claude-interactive-tools/meta.json"
+import { Film as F44 } from "../../44-arc-boosts/Film"
+import M44 from "../../44-arc-boosts/meta.json"
+import { Film as F45 } from "../../45-linear-dashboards/Film"
+import M45 from "../../45-linear-dashboards/meta.json"
+import { Film as F46 } from "../../46-spline-hana/Film"
+import M46 from "../../46-spline-hana/meta.json"
+import { Film as F47 } from "../../47-linear-agents/Film"
+import M47 from "../../47-linear-agents/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32], [F33, M33], [F34, M34], [F35, M35], [F36, M36], [F37, M37], [F38, M38], [F39, M39], [F40, M40], [F41, M41], [F42, M42]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32], [F33, M33], [F34, M34], [F35, M35], [F36, M36], [F37, M37], [F38, M38], [F39, M39], [F40, M40], [F41, M41], [F42, M42], [F43, M43], [F44, M44], [F45, M45], [F46, M46], [F47, M47]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (

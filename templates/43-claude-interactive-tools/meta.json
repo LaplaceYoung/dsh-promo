@@ -1,0 +1,7 @@
+{
+ "id": "43", "slug": "43-claude-interactive-tools", "comp": "T43", "fps": 24, "dur": 53.917, "bpm": 126,
+ "cuts": [4.0, 4.458, 9.042, 13.083, 15.5, 16.208, 18.125, 27.708, 34.625, 39.708, 49.333],
+ "highlights": [[0.0, 9.0], [9.1, 13.0], [13.2, 16.1], [20.0, 27.6], [30.0, 34.5], [36.4, 39.6], [45.0, 47.0], [49.4, 53.9]],
+ "ref": {"title": "Your tools are now interactive in Claude", "company": "Anthropic", "year": 2026, "url": "https://www.youtube.com/watch?v=bluAmTHoEow", "dur": 53.94, "fps": 24},
+ "style": "暖米色纸片图形开场 · 奶白对话窗口 · 推近输入框 · 回复里展开的交互卡片（流程图、场景、待办、邮件）· 拉远看整窗 · 米色底收尾"
+}

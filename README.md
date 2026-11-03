@@ -24,7 +24,7 @@ English summary is [below](#english).
 
 ## 模板库
 
-除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 42 个。
+除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 47 个。
 
 | 编号 | 名称 | 参考片 | 风格 | 时长 | 预览 |
 |---|---|---|---|---|---|
@@ -70,6 +70,11 @@ English summary is [below](#english).
 | 40 | [米白纸面手绘风 + 场景、润色和会议记录](templates/40-notion-custom-agents/) | [Notion · Meet Custom Agents: Your 24/7 AI Team](https://www.youtube.com/watch?v=yrEic418kjg) | 米白底 · 传送带上的任务标签 · 排线手绘的手 · 粗描边的圆形图标 · 大号黑字 · 看板和列表界面 · 深蓝夜景里飞过的图标 · 按钮和标志收尾 | 70.9 秒 | [GIF](templates/40-notion-custom-agents/preview.gif) |
 | 41 | [紫蓝渐变 + 提示词、润色、热词和邮件场景](templates/41-pitch-ai-actions/) | [Pitch · Introducing Pitch AI actions](https://www.youtube.com/watch?v=7Nab49BybXU) | 紫蓝粉渐变底 · 半透明输入条 · 黑底大字卡和描边字框 · 风景照片 · 米色幻灯片和黄色光晕 · 动作菜单 · 进度胶囊 · 3D 形状上的标志 | 79.0 秒 | [GIF](templates/41-pitch-ai-actions/preview.gif) |
 | 42 | [星空前的暗色编辑器 + 悬停预览场景和润色](templates/42-framer-font-previews/) | [Framer · Framer Update: Instant Font Previews](https://www.youtube.com/watch?v=JAKF3RTbgek) | 星空背景上的深色编辑器 · 选中标题后推近属性面板 · 悬停场景/润色选项时标题实时预览 · 渐黑后黑底逐词快闪 · 像素标志收尾 | 68.7 秒 | [GIF](templates/42-framer-font-previews/preview.gif) |
+| 43 | [暖米色对话窗口 + 回复里展开的卡片](templates/43-claude-interactive-tools/) | [Anthropic · Your tools are now interactive in Claude](https://www.youtube.com/watch?v=bluAmTHoEow) | 暖米色纸片图形开场 · 奶白对话窗口 · 推近输入框 · 回复里展开的流程、场景、待办和邮件卡片 · 拉远收尾 | 53.9 秒 | [GIF](templates/43-claude-interactive-tools/preview.gif) |
+| 44 | [快切换肤蒙太奇 + 去口头禅和热词](templates/44-arc-boosts/) | [The Browser Company · Boosts by Arc · Meet Your New Internet](https://www.youtube.com/watch?v=N0jMmiCS8oQ) | 同一页面连换配色和字体 · 彩色底大字一帧一换 · 调色面板 · 闪电删除条 · 层叠窗口 · 地平线字卡 · 弹跳字标 | 42.1 秒 | [GIF](templates/44-arc-boosts/preview.gif) |
+| 45 | [近黑底倾斜数据面板 + 逐字稿和会议总结](templates/45-linear-dashboards/) | [Linear · Introducing Dashboards in Linear](https://www.youtube.com/watch?v=8Njlv_LwlQM) | 近黑底 · 透视倾斜的面板 · 发光曲线、散点、细柱（不标数值）· 景深 · 淡入淡出的白字标题 · 卡片式面板 | 44.2 秒 | [GIF](templates/45-linear-dashboards/preview.gif) |
+| 46 | [黑底像素字标快切 + 快捷键和场景](templates/46-spline-hana/) | [Spline · Introducing Hana - A new canvas for interactivity](https://www.youtube.com/watch?v=ZsYijIY7qBA) | 像素字标 · 霓虹线框图标 · 科幻 HUD · 浅紫底按键 · 等距线框 · 像素菜单 · 扇形卡片 · 深色画板推拉 · 渐变球收尾 | 26.7 秒 | [GIF](templates/46-spline-hana/preview.gif) |
+| 47 | [近黑底放大列表 + 场景切换和提示词](templates/47-linear-agents/) | [Linear · Introducing Linear For Agents](https://www.youtube.com/watch?v=sbwOQV5zY34) | 近黑底 · 放大的深色列表 · 多选和下拉 · 评论线程逐条出现 · 卡片列表滚动模糊 · 文档页与回复 · 白字轮换 · 字标淡出 | 32.6 秒 | [GIF](templates/47-linear-agents/preview.gif) |
 
 从模板 12 开始，参考片里的实拍和照片会换成许可允许再分发的公开素材，署名见 [docs/assets-credits.md](docs/assets-credits.md)。
 
@@ -205,7 +210,7 @@ Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、
 
 Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
 
-**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering, Vercel, Framer, Moonshot AI, ElevenLabs, OpenAI, Stripe, Pitch so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Forty-two templates exist (01–42, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 91-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
+**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering, Vercel, Framer, Moonshot AI, ElevenLabs, OpenAI, Stripe, Pitch, Spline so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Forty-seven templates exist (01–47, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 91-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
 
 **Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
 

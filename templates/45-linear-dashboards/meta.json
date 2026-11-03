@@ -1,0 +1,7 @@
+{
+ "id": "45", "slug": "45-linear-dashboards", "comp": "T45", "fps": 60, "dur": 44.183, "bpm": 132,
+ "cuts": [5.083, 9.883, 14.667, 19.467, 24.333],
+ "highlights": [[0.0, 9.8], [9.9, 19.4], [19.5, 24.3], [24.4, 34.0], [34.0, 44.1]],
+ "ref": {"title": "Introducing Dashboards in Linear", "company": "Linear", "year": 2025, "url": "https://www.youtube.com/watch?v=8Njlv_LwlQM", "dur": 44.26, "fps": 60},
+ "style": "近黑底 · 透视倾斜的数据面板 · 发光曲线、散点、细柱 · 景深虚化 · 淡入淡出的白字标题 · 卡片式面板 · 列表下钻 · 白色字标收尾"
+}
