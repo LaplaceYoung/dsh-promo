@@ -46,3 +46,5 @@
 | 27 | `templates/_engine/public/t27-streaks-teal.webp` | Abstract Blue Light Streaks on Dark Background（旋转 90°，裁到 1600×900） | Djimmer Koster | <https://www.pexels.com/photo/29333569/> | [Pexels License](https://www.pexels.com/license/) |
 | 27 | `templates/_engine/public/t27-sea.webp` | Aerial Photo of Water Waves（裁到 960×640） | Magda Ehlers | <https://www.pexels.com/photo/988526/> | [Pexels License](https://www.pexels.com/license/) |
 | 28–32 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 33–37 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 35 | `templates/_engine/public/t35-marble.webp` | Light Pink Marble Stone Texture（旋转 90°，缩到 2000×1125，片中调亮） | Kaboompics.com | <https://www.pexels.com/photo/4709032/> | [Pexels License](https://www.pexels.com/license/) |

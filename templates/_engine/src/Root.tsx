@@ -61,8 +61,18 @@ import { Film as F31 } from "../../31-claude-artifacts/Film"
 import M31 from "../../31-claude-artifacts/meta.json"
 import { Film as F32 } from "../../32-claude-imagine/Film"
 import M32 from "../../32-claude-imagine/meta.json"
+import { Film as F33 } from "../../33-linear-pulse/Film"
+import M33 from "../../33-linear-pulse/meta.json"
+import { Film as F34 } from "../../34-elevenlabs-composer/Film"
+import M34 from "../../34-elevenlabs-composer/meta.json"
+import { Film as F35 } from "../../35-openai-live-voices/Film"
+import M35 from "../../35-openai-live-voices/meta.json"
+import { Film as F36 } from "../../36-stripe-sessions/Film"
+import M36 from "../../36-stripe-sessions/meta.json"
+import { Film as F37 } from "../../37-framer-skills/Film"
+import M37 from "../../37-framer-skills/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32], [F33, M33], [F34, M34], [F35, M35], [F36, M36], [F37, M37]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (

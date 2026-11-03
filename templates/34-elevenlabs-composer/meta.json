@@ -1,0 +1,7 @@
+{
+ "id": "34", "slug": "34-elevenlabs-composer", "comp": "T34", "fps": 30, "dur": 59.118, "bpm": 112,
+ "cuts": [8.033, 10.067, 15.033, 24.767, 26.6, 32.167],
+ "highlights": [[0.0, 4.2], [10.1, 14.8], [15.1, 20.5], [24.8, 27.5], [28.0, 31.5], [37.0, 41.0], [50.3, 59.0]],
+ "ref": {"title": "Introducing Composer, a section-by-section song editor.", "company": "ElevenLabs", "year": 2026, "url": "https://www.youtube.com/watch?v=OzfgOjEfK98", "dur": 59.12, "fps": 30},
+ "style": "黑底 · 流体青色质感 · 大号输入胶囊 · 堆叠的场景胶囊 · 滚轮选择 · 声波时间线 · 漂浮的声波卡片"
+}

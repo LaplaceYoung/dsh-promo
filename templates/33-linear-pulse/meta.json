@@ -1,0 +1,7 @@
+{
+ "id": "33", "slug": "33-linear-pulse", "comp": "T33", "fps": 30, "dur": 43.467, "bpm": 114,
+ "cuts": [10.9, 11.733, 28.933, 33.4, 35.433],
+ "highlights": [[0.0, 2.2], [2.6, 6.0], [7.0, 10.5], [12.0, 15.0], [23.8, 26.5], [29.0, 33.2], [36.0, 43.0]],
+ "ref": {"title": "Introducing Pulse: Stay up to date on what's happening across projects and initiatives", "company": "Linear", "year": 2025, "url": "https://www.youtube.com/watch?v=mcWS9yiGzog", "dur": 43.47, "fps": 30},
+ "style": "浅灰白底大字 · 侧栏微距推近 · 会议记录信息流 · 收件箱和总结页 · 手机特写 · 功能名和标志收尾"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "35", "slug": "35-openai-live-voices", "comp": "T35", "fps": 30, "dur": 40.8, "bpm": 100,
+ "cuts": [34.4],
+ "highlights": [[0.0, 3.0], [6.5, 10.0], [16.5, 20.0], [24.4, 31.5], [32.0, 34.3], [34.4, 40.5]],
+ "ref": {"title": "GPT-Live-1.1 has new voices and better accents.", "company": "OpenAI", "year": 2026, "url": "https://www.youtube.com/watch?v=GyO8Ao7yKJc", "dur": 40.8, "fps": 30},
+ "style": "暖光大理石墙前的两部手机 · 换色的声音球 · 字幕式逐字稿 · 横移找到第三部手机 · 白底打字收尾"
+}

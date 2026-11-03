@@ -24,7 +24,7 @@ English summary is [below](#english).
 
 ## 模板库
 
-除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 32 个。
+除了上面两支长片，`templates/` 里还有一组短模板。每个模板对着一支公开的产品宣传片逐帧拆解，照它的时长、剪辑点、节拍和运动方式重做一遍，画面和文案全部换成 [MosMos](https://mosmos.io)。目标是攒到 50 个，现在有 37 个。
 
 | 编号 | 名称 | 参考片 | 风格 | 时长 | 预览 |
 |---|---|---|---|---|---|
@@ -60,6 +60,11 @@ English summary is [below](#english).
 | 30 | [米色底 + 桌面窗口一镜到底](templates/30-claude-code-desktop/) | [Anthropic · Claude Code on desktop](https://www.youtube.com/watch?v=zrcCS9oHjtI) | 米色底 · 浅色桌面窗口一镜到底 · 推近切换模式 · 擦除到衬线字卡 · 像素标志收尾 | 20.4 秒 | [GIF](templates/30-claude-code-desktop/preview.gif) |
 | 31 | [橙色底 + 一连串快切的使用场景](templates/31-claude-artifacts/) | [Anthropic · Turn ideas into interactive artifacts](https://www.youtube.com/watch?v=iSn77jvjojA) | 橙色底 · 弹跳的方块变成输入框 · 长镜头的步进网格 · 一连串快切的使用场景 · 倾斜卡片 · 标志卡片收尾 | 45.1 秒 | [GIF](templates/31-claude-artifacts/preview.gif) |
 | 32 | [淡紫底 + 桌面上一扇扇写字的窗口](templates/32-claude-imagine/) | [Anthropic · An experimental new way to design software](https://www.youtube.com/watch?v=dGiqrsv530Y) | 淡紫底和飘动的白线 · 底部输入条 · 桌面上一扇扇打开的窗口 · 右侧的输入记录 · 米白卡片收尾 | 102.0 秒 | [GIF](templates/32-claude-imagine/preview.gif) |
+| 33 | [浅灰白底 + 会议一结束总结就来了](templates/33-linear-pulse/) | [Linear · Introducing Pulse](https://www.youtube.com/watch?v=mcWS9yiGzog) | 浅灰白底大字 · 侧栏微距推近 · 会议记录信息流 · 收件箱和总结页 · 手机特写 · 功能名和标志收尾 | 43.5 秒 | [GIF](templates/33-linear-pulse/preview.gif) |
+| 34 | [黑底流体青色 + 听写、场景和润色](templates/34-elevenlabs-composer/) | [ElevenLabs · Introducing Composer, a section-by-section song editor.](https://www.youtube.com/watch?v=OzfgOjEfK98) | 黑底 · 流体青色质感 · 大号输入胶囊 · 堆叠的场景胶囊 · 滚轮选择 · 声波时间线 · 漂浮的声波卡片 | 59.1 秒 | [GIF](templates/34-elevenlabs-composer/preview.gif) |
+| 35 | [暖光舞台上的手机 + 分得清每个说话人](templates/35-openai-live-voices/) | [OpenAI · GPT-Live-1.1 has new voices and better accents.](https://www.youtube.com/watch?v=GyO8Ao7yKJc) | 暖光大理石墙前的两部手机 · 换色的声音球 · 字幕式逐字稿 · 横移找到第三部手机 · 白底打字收尾 | 40.8 秒 | [GIF](templates/35-openai-live-voices/preview.gif) |
+| 36 | [深紫渐变大字 + 热词、润色、场景和会议卡片](templates/36-stripe-sessions/) | [Stripe · Stripe Sessions 2024 · New Revenue and Finance Automation tools](https://www.youtube.com/watch?v=CXrfVtUC8M0) | 深紫藏青底 · 紫粉橙渐变光 · 一句一镜的渐变大字 · 发光的毛玻璃界面卡片 · 光标操作 · 白色标志卡收尾 | 67.0 秒 | [GIF](templates/36-stripe-sessions/preview.gif) |
+| 37 | [黑底倾斜输入框 + 提示词场景](templates/37-framer-skills/) | [Framer · Introducing Skills](https://www.youtube.com/watch?v=ibUWeTP2tzc) | 纯黑底 · 倾斜的深色输入框里逐字出现的提示词 · 宏距离大字 · 倾斜画布上成片的文稿缩略图与蓝色辉光 · 发光的场景标签 · 标志收尾 | 30.1 秒 | [GIF](templates/37-framer-skills/preview.gif) |
 
 从模板 12 开始，参考片里的实拍和照片会换成许可允许再分发的公开素材，署名见 [docs/assets-credits.md](docs/assets-credits.md)。
 
@@ -195,7 +200,7 @@ Remotion 4（React + TypeScript）、ffmpeg、Python（numpy、scipy、Pillow、
 
 Shot-by-shot breakdown of the reference (text only): [docs/reference-analysis.md](docs/reference-analysis.md).
 
-**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering, Vercel, Framer, Moonshot AI so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Thirty-two templates exist (01–32, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 62-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
+**Template library:** `templates/` holds short MosMos motion-design templates, each a frame-accurate structural remake of a public product launch video (Anthropic, Linear, The Browser Company, Notion, Cursor, Apple, Raycast, Superhuman, Figma, teenage engineering, Vercel, Framer, Moonshot AI, ElevenLabs, OpenAI, Stripe so far): same length, cut points, tempo and camera moves, with MosMos content, synthesized music and, from template 12 on, openly licensed stock photos, video, CC0 sound effects and OFL fonts where the reference uses live action (credited in docs/assets-credits.md). Thirty-seven templates exist (01–37, goal: 50); each folder has a text-only shot breakdown, a GIF and a 720p MP4 preview. All templates share one Remotion engine in `templates/_engine/` (`scripts/render.sh NN-slug`). The 91-video reference catalog is in [docs/reference-catalog.md](docs/reference-catalog.md).
 
 **Rebuild:** Node.js 20+, Remotion 4.0.539, ffmpeg 7, Python 3 with `numpy scipy pillow`, and the fonts Noto Sans CJK SC, Inter, Geist, Geist Mono. Commands are in [mosmos/PROGRESS.md](mosmos/PROGRESS.md) and [moss-create/PROGRESS.md](moss-create/PROGRESS.md). MOSS Create footage and template media are not in the repo; recapture them first with the scripts described in [moss-create/assets/README.md](moss-create/assets/README.md).
 
