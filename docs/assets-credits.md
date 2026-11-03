@@ -48,3 +48,5 @@
 | 28–32 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
 | 33–37 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
 | 35 | `templates/_engine/public/t35-marble.webp` | Light Pink Marble Stone Texture（旋转 90°，缩到 2000×1125，片中调亮） | Kaboompics.com | <https://www.pexels.com/photo/4709032/> | [Pexels License](https://www.pexels.com/license/) |
+| 38–42 | 系统字体（不进仓库，`templates/_engine/scripts/fetch-fonts.sh` 下载） | Noto Sans SC / Noto Serif SC 可变字重 | Google Fonts / Adobe | <https://github.com/google/fonts/tree/main/ofl/notosanssc> | [SIL OFL 1.1](https://openfontlicense.org) |
+| 41 | `templates/_engine/public/t41-mountain.webp` | Gray and Brown Mountain（裁成 16:9，缩到 1920×1080） | Pixabay | <https://www.pexels.com/photo/417173/> | [Pexels License](https://www.pexels.com/license/) |

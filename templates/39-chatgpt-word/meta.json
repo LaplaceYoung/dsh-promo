@@ -1,0 +1,7 @@
+{
+ "id": "39", "slug": "39-chatgpt-word", "comp": "T39", "fps": 30, "dur": 42.033, "bpm": 105,
+ "cuts": [2.1, 7.9, 11.633, 14.233, 18.167, 21.1, 22.8, 29.1, 31.2, 35.3],
+ "highlights": [[0.1, 2.0], [2.2, 7.8], [8.0, 11.5], [22.9, 29.0], [29.2, 31.1], [35.4, 41.5]],
+ "ref": {"title": "ChatGPT for Word is now available", "company": "OpenAI", "year": 2026, "url": "https://www.youtube.com/watch?v=lxVMdEpe0RQ", "dur": 42.05, "fps": 30},
+ "style": "白底黑字逐词出现 · 蓝色渐变桌面上的文档窗口 · 推近右下角的输入卡片 · 文档里逐段写入并高亮 · 进度清单 · 竖向滚动的词 · 标志收尾"
+}

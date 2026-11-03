@@ -1,0 +1,7 @@
+{
+ "id": "38", "slug": "38-linear-code-intelligence", "comp": "T38", "fps": 60, "dur": 33.867, "bpm": 120,
+ "cuts": [4.533, 8.183, 18.817],
+ "highlights": [[0.5, 4.5], [4.6, 8.1], [8.3, 18.7], [19.0, 24.5], [28.5, 33.5]],
+ "ref": {"title": "Introducing Code Intelligence", "company": "Linear", "year": 2026, "url": "https://www.youtube.com/watch?v=eKDf7I0TYpg", "dur": 33.88, "fps": 60},
+ "style": "近黑底 · 倾斜的深色面板和点阵标志 · 斜体逐字输入 · 模糊代码前浮动的像素风对话框 · 等宽字标签 · 对话窗里的提问 · 白字和标志收尾"
+}

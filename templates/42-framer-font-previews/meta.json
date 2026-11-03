@@ -1,0 +1,7 @@
+{
+ "id": "42", "slug": "42-framer-font-previews", "comp": "T42", "fps": 60, "dur": 68.683, "bpm": 105,
+ "cuts": [],
+ "highlights": [[0.5, 10.5], [15.0, 20.5], [21.3, 29.9], [32.0, 39.0], [47.5, 59.4], [59.5, 66.0]],
+ "ref": {"title": "Framer Update: Instant Font Previews", "company": "Framer", "year": 2026, "url": "https://www.youtube.com/watch?v=JAKF3RTbgek", "dur": 68.68, "fps": 60},
+ "style": "星空背景上的深色编辑器 · 选中标题后推近属性面板 · 悬停场景/润色选项时标题实时预览 · 渐黑后黑底逐词快闪 · 像素标志收尾"
+}

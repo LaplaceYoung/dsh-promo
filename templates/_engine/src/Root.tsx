@@ -71,8 +71,18 @@ import { Film as F36 } from "../../36-stripe-sessions/Film"
 import M36 from "../../36-stripe-sessions/meta.json"
 import { Film as F37 } from "../../37-framer-skills/Film"
 import M37 from "../../37-framer-skills/meta.json"
+import { Film as F38 } from "../../38-linear-code-intelligence/Film"
+import M38 from "../../38-linear-code-intelligence/meta.json"
+import { Film as F39 } from "../../39-chatgpt-word/Film"
+import M39 from "../../39-chatgpt-word/meta.json"
+import { Film as F40 } from "../../40-notion-custom-agents/Film"
+import M40 from "../../40-notion-custom-agents/meta.json"
+import { Film as F41 } from "../../41-pitch-ai-actions/Film"
+import M41 from "../../41-pitch-ai-actions/meta.json"
+import { Film as F42 } from "../../42-framer-font-previews/Film"
+import M42 from "../../42-framer-font-previews/meta.json"
 
-const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32], [F33, M33], [F34, M34], [F35, M35], [F36, M36], [F37, M37]] as const
+const T = [[F03, M03], [F04, M04], [F05, M05], [F06, M06], [F07, M07], [F08, M08], [F09, M09], [F10, M10], [F11, M11], [F12, M12], [F15, M15], [F17, M17], [F14, M14], [F13, M13], [F16, M16], [F18, M18], [F19, M19], [F20, M20], [F21, M21], [F22, M22], [F23, M23], [F24, M24], [F25, M25], [F26, M26], [F27, M27], [F30, M30], [F28, M28], [F29, M29], [F31, M31], [F32, M32], [F33, M33], [F34, M34], [F35, M35], [F36, M36], [F37, M37], [F38, M38], [F39, M39], [F40, M40], [F41, M41], [F42, M42]] as const
 export const Root = () => (
 	<>
 		{T.map(([F, m]) => (
